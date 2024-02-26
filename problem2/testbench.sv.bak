@@ -1,0 +1,10 @@
+module testbench();
+logic a;
+assign a=4;
+logic  [a-1:0]num1,num2;
+sumador #(a) misumador(num1,num2,Cout,Result);
+initial begin 
+	num1[a-1:0] =4'b0001;
+	num1[a-1:0] =4'b0101;
+	end
+end testbench;
