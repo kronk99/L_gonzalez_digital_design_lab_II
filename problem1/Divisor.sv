@@ -1,4 +1,4 @@
-module Divisor4Bits (
+module Divisor (
   input logic [3:0] dividend,
   input logic [3:0] divisor,
   output logic [3:0] quotient,

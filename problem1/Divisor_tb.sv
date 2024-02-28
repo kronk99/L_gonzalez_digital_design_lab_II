@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Divisor4Bits_TB;
+module Divisor_tb;
 
   // Parámetros
   parameter CLOCK_PERIOD = 10; // Periodo de reloj en unidades de tiempo
@@ -12,7 +12,7 @@ module Divisor4Bits_TB;
   logic [3:0] remainder;
 
   // Instancia del módulo Divisor4Bits
-  Divisor4Bits uut (
+  Divisor uut (
     .dividend(dividend),
     .divisor(divisor),
     .quotient(quotient),

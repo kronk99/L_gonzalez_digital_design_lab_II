@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Feb 27 17:12:30 2024
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Elaboration Status : Successful - Tue Feb 27 22:12:55 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Calculadora
-Top-level Entity Name : sumador
+Top-level Entity Name : Divisor
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
