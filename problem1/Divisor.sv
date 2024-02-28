@@ -1,4 +1,6 @@
-module Divisor (
+module Divisor ( //cambios al nombre y al testbench, deberia de servir el testbench
+//NOTA, EL TESTBENCH PRODUCE MAL EL RESULTADO LA DIVISION DE 8 ENTRE 2. , POSIBLEMENTE
+//EL ERROR ESTE ACA O EN EL TESTBENCH
   input logic [3:0] dividend,
   input logic [3:0] divisor,
   output logic [3:0] quotient,

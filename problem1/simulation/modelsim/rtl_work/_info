@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/simulation/modelsim
 vDivisor
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1709093611
+Z2 !s110 1709151151
 !i10b 1
 !s100 WSB=3fgQ`zF5[]f`To6?33
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,37 +28,38 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1709093611.000000
+!s108 1709151150.000000
 !s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1
+Z8 tCvgOpt 0
 n@divisor
-vtestbench
+vDivisor_tb
 R1
 R2
 !i10b 1
-!s100 BldOcN6XGIRCc;UMi=Qla3
+!s100 39m9o4;@U6YQgXSO0Z[d30
 R3
-IZfm7f7X2EBSoe@]`nT:MI2
+IAUda^k1oFnc[j<:^Z92E?1
 R4
 S1
 R0
-w1709091594
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/testbench.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/testbench.sv
+w1709093562
+8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor_tb.sv
+FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor_tb.sv
 !i122 1
-L0 1 11
+L0 3 43
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/testbench.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/testbench.sv|
+!s108 1709151151.000000
+!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor_tb.sv|
 !i113 1
+R6
 R7
 R8
-R9
+n@divisor_tb
