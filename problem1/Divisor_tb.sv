@@ -26,13 +26,14 @@ module Divisor_tb;
   // Testbench stimulus
   initial begin
     // Inicialización
-    dividend = 8;  // Cambia los valores según sea necesario
+    dividend = 15;  
     divisor = 2;
 
     // Enviar estímulos al módulo
     repeat (16) begin
-      #CLOCK_PERIOD dividend = dividend - 1;  // Cambia los valores según sea necesario
-      #CLOCK_PERIOD divisor = divisor + 1;  // Cambia los valores según sea necesario
+		#5
+      dividend = dividend;  
+      divisor = divisor;  
     end
 
     // Mostrar resultados

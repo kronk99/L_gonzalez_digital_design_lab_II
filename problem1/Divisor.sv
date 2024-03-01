@@ -1,6 +1,5 @@
-module Divisor ( //cambios al nombre y al testbench, deberia de servir el testbench
-//NOTA, EL TESTBENCH PRODUCE MAL EL RESULTADO LA DIVISION DE 8 ENTRE 2. , POSIBLEMENTE
-//EL ERROR ESTE ACA O EN EL TESTBENCH
+module Divisor (
+
   input logic [3:0] dividend,
   input logic [3:0] divisor,
   output logic [3:0] quotient,
@@ -17,13 +16,12 @@ module Divisor ( //cambios al nombre y al testbench, deberia de servir el testbe
     temp_quotient = 4'b0;
     
     // Bucle de división
-    for (int i = 0; i < 4; i++) begin
-      temp_dividend = temp_dividend << 1;  // Desplazamiento a la izquierda
-      temp_quotient = temp_quotient << 1;  // Desplazamiento a la izquierda
+    for (int i = 0; i < 16; i++) begin
+      
       
       if (temp_dividend >= divisor) begin
         temp_dividend = temp_dividend - divisor;
-        temp_quotient = temp_quotient | 1'b1;
+        temp_quotient = temp_quotient + 1;
       end
     end
 
