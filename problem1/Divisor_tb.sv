@@ -4,15 +4,15 @@ module Divisor_tb;
 
   // Parámetros
   parameter CLOCK_PERIOD = 10; // Periodo de reloj en unidades de tiempo
-
+  parameter Nbits = 4;
   // Señales
-  logic [3:0] dividend;
-  logic [3:0] divisor;
-  logic [3:0] quotient;
-  logic [3:0] remainder;
+  logic [Nbits-1:0] dividend;
+  logic [Nbits-1:0] divisor;
+  logic [Nbits-1:0] quotient;
+  logic [Nbits-1:0] remainder;
 
   // Instancia del módulo Divisor4Bits
-  Divisor uut (
+  Divisor #(Nbits) uut (
     .dividend(dividend),
     .divisor(divisor),
     .quotient(quotient),
@@ -26,7 +26,7 @@ module Divisor_tb;
   // Testbench stimulus
   initial begin
     // Inicialización
-    dividend = 15;  
+    dividend = 12; 
     divisor = 2;
 
     // Enviar estímulos al módulo

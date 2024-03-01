@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Calculadora
-Thu Feb 29 19:03:10 2024
+Fri Mar 01 14:31:06 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,8 +9,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |Divisor
+  5. Analysis & Elaboration Settings
+  6. Analysis & Elaboration Messages
 
 
 
@@ -37,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Feb 29 19:03:10 2024       ;
+; Analysis & Elaboration Status ; Successful - Fri Mar 01 14:31:06 2024       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Calculadora                                 ;
 ; Top-level Entity Name         ; Divisor                                     ;
@@ -66,6 +67,16 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Divisor ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; Nbits          ; 5     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -161,7 +172,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Feb 29 19:02:43 2024
+    Info: Processing started: Fri Mar 01 14:30:40 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -177,11 +188,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file divisor
 Info (12021): Found 1 design units, including 1 entities, in source file divisor_tb.sv
     Info (12023): Found entity 1: Divisor_tb File: C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/Divisor_tb.sv Line: 3
 Info (12127): Elaborating entity "Divisor" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Divisor.sv(24): truncated value with size 32 to match size of target (4) File: C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at Divisor.sv(24): truncated value with size 32 to match size of target (5) File: C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv Line: 24
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Thu Feb 29 19:03:10 2024
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Fri Mar 01 14:31:06 2024
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:40
 
 

@@ -1,14 +1,14 @@
-module Divisor (
+module Divisor #(parameter Nbits=5) ( 
 
-  input logic [3:0] dividend,
-  input logic [3:0] divisor,
-  output logic [3:0] quotient,
-  output logic [3:0] remainder
+  input logic [Nbits-1:0] dividend,
+  input logic [Nbits-1:0] divisor,
+  output logic [Nbits-1:0] quotient,
+  output logic [Nbits-1:0] remainder
 );
 
   // Variables locales
-  logic [3:0] temp_dividend;
-  logic [3:0] temp_quotient;
+  logic [Nbits-1:0] temp_dividend;
+  logic [Nbits-1:0] temp_quotient;
 
   always_comb begin
     // Inicialización de variables locales
@@ -16,7 +16,7 @@ module Divisor (
     temp_quotient = 4'b0;
     
     // Bucle de división
-    for (int i = 0; i < 16; i++) begin
+    for (int i = 0; i < (2 ** Nbits); i++) begin
       
       
       if (temp_dividend >= divisor) begin
