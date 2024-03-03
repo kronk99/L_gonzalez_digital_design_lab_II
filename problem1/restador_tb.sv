@@ -6,7 +6,7 @@ module restador_tb;
 
     // Signals
     logic [N-1:0] in_signal;
-    logic [N-1:0] out_signal;
+    logic [N:0] out_signal;
 
     // Instantiate the inverter module
     restador #(N) inverter (
