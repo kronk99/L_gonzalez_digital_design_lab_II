@@ -7,21 +7,81 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/User/OneDrive/Documentos/V\ semestre/Taller\ de\ diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1 {C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:13:03 on Feb 27,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1" C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv 
-# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/simulation/modelsim/rtl_work/_temp/vlogh2najw".
-# C:/Users/User/OneDrive/Documentos/V semestre/Taller de diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv(1): Verilog Compiler exiting
-# End time: 17:13:04 on Feb 27,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./Calculadora_run_msim_rtl_verilog.do line 8
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+C:/Users/User/OneDrive/Documentos/V\ semestre/Taller\ de\ diseño/Lab2/L_gonzalez_digital_design_lab_II/problem1 {C:/Users/..."
+# Start time: 20:52:54 on Mar 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv 
+# -- Compiling module restador
+# -- Compiling module nand_d
+# 
+# Top level modules:
+# 	restador
+# End time: 20:52:54 on Mar 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:52:54 on Mar 02,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador_tb.sv 
+# -- Compiling module restador_tb
+# 
+# Top level modules:
+# 	restador_tb
+# End time: 20:52:54 on Mar 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  restador_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" restador_tb 
+# Start time: 20:52:55 on Mar 02,2024
+# Loading sv_std.std
+# Loading work.restador_tb
+# Loading work.restador
+# Loading work.nand_d
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(28).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(28).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(28).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(28).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 13
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: andre  Hostname: ANDG  ProcessID: 11952
+#           Attempting to use alternate WLF file "./wlftn90yna".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftn90yna
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Input: 0000, Output: 1111
+# Input: 1111, Output: 0000
+# Input: 0100, Output: 1011
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador_tb.sv(38)
+#    Time: 30 ps  Iteration: 0  Instance: /restador_tb
+# 1
+# Break in Module restador_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/L_gonzalez_digital_design_lab_II/problem1/restador_tb.sv line 38
+# End time: 20:53:17 on Mar 02,2024, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 14
