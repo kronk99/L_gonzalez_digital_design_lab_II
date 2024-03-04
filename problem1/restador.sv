@@ -1,4 +1,3 @@
-
 module restador #(parameter BITS= 4) (input logic [BITS-1:0] num1, num2, output logic
 Carryout, output logic [BITS-1:0] Result);
 		logic [BITS-1:0] int_res;
@@ -32,7 +31,6 @@ Carryout, output logic [BITS-1:0] Result);
 		 );
 
 endmodule
-
 
 
 

@@ -1,0 +1,46 @@
+module multiplicador_tb;
+
+    // Parameters
+    parameter N = 4;
+    
+    // Signals
+    logic [N-1:0] a, b;
+    logic [2*N-1:0] result;
+    
+    // Instantiate the multiplier module
+    multiplicador #(N) dut (
+        .a(a),
+        .b(b),
+        .result(result)
+    );
+
+    // Test stimulus
+    initial begin
+        // Initialize inputs
+        a = b'1000; // Example value for a
+        b = b'0001; // Example value for b
+        
+        // Apply stimulus
+        #5;
+        $display("a = %h, b = %h, result = %h", a, b, result);
+        
+        // Generate all possible combinations for a and b
+        repeat (2**N) begin
+            // Increment b for each iteration
+            b = b + 1;
+            // If b overflows, reset it and increment a
+            if (b == (2**N)) begin
+                b = 0;
+                a = a + 1;
+            end
+            // Wait for the result to stabilize
+            #5;
+            // Display the inputs and the result
+            $display("a = %h, b = %h, result = %h", a, b, result);
+        end
+        
+        // End simulation
+        $finish;
+    end
+
+endmodule

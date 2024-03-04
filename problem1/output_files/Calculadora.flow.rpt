@@ -1,5 +1,5 @@
 Flow report for Calculadora
-Fri Mar 01 14:31:06 2024
+Sun Mar 03 22:51:44 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Fri Mar 01 14:31:06 2024       ;
+; Flow Status                 ; Successful - Sun Mar 03 22:51:44 2024       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; Calculadora                                 ;
-; Top-level Entity Name       ; Divisor                                     ;
+; Top-level Entity Name       ; multiplicador                               ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -63,41 +63,45 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/01/2024 14:30:42 ;
+; Start date & time ; 03/03/2024 22:51:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Calculadora         ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 1096903243875.170932504112860          ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Divisor_tb     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Divisor_tb                             ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; Divisor_tb.sv                          ; --            ; --          ; Divisor_tb     ;
-; EDA_TEST_BENCH_FILE                  ; testbench.sv                           ; --            ; --          ; testbench      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Divisor_tb                             ; --            ; --          ; Divisor_tb     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --          ; testbench      ;
-; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                  ; Divisor_tb                             ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Divisor     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Divisor     ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Divisor     ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; Divisor                                ; Calculadora   ; --          ; --             ;
-+--------------------------------------+----------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id       ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 5397597525652.170952789921276          ; --            ; --            ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; multiplicador_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; Divisor_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; testbench        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; multiplicador_tb                       ; --            ; --            ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --            ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; multiplicador_tb.sv                    ; --            ; --            ; multiplicador_tb ;
+; EDA_TEST_BENCH_FILE                  ; Divisor_tb.sv                          ; --            ; --            ; Divisor_tb       ;
+; EDA_TEST_BENCH_FILE                  ; testbench.sv                           ; --            ; --            ; testbench        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; multiplicador_tb                       ; --            ; --            ; multiplicador_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Divisor_tb                             ; --            ; --            ; Divisor_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --            ; testbench        ;
+; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --            ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; Divisor_tb                             ; --            ; --            ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; multiplicador_tb                       ; --            ; --            ; eda_simulation   ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation   ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; multiplicador ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; multiplicador ; Top              ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; multiplicador ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --            ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --               ;
+; TOP_LEVEL_ENTITY                     ; multiplicador                          ; Calculadora   ; --            ; --               ;
++--------------------------------------+----------------------------------------+---------------+---------------+------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -105,8 +109,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:26     ; 1.0                     ; 4759 MB             ; 00:00:40                           ;
-; Total                  ; 00:00:26     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 4761 MB             ; 00:00:04                           ;
+; Total                  ; 00:00:05     ; --                      ; --                  ; 00:00:04                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,7 +119,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-FH0NB1C  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; Andg             ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 
