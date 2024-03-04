@@ -1,0 +1,146 @@
+# Reading pref.tcl
+# do Calculadora_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:43 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv 
+# -- Compiling module sumador1bit
+# 
+# Top level modules:
+# 	sumador1bit
+# End time: 12:55:43 on Mar 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:43 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv 
+# -- Compiling module sumador
+# 
+# Top level modules:
+# 	sumador
+# End time: 12:55:43 on Mar 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:43 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv 
+# -- Compiling module restador
+# 
+# Top level modules:
+# 	restador
+# End time: 12:55:43 on Mar 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:44 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv 
+# -- Compiling module inversor
+# -- Compiling module nand_d
+# 
+# Top level modules:
+# 	inversor
+# End time: 12:55:44 on Mar 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:55:44 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador_tb.sv 
+# -- Compiling module restador_tb
+# 
+# Top level modules:
+# 	restador_tb
+# End time: 12:55:44 on Mar 03,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  restador_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" restador_tb 
+# Start time: 12:55:44 on Mar 03,2024
+# Loading sv_std.std
+# Loading work.restador_tb
+# Loading work.restador
+# Loading work.inversor
+# Loading work.sumador
+# Loading work.sumador1bit
+# Loading work.nand_d
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2 File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[0]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[1]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[2]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /restador_tb/myrestador/inverter2/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: andre  Hostname: ANDG  ProcessID: 11952
+#           Attempting to use alternate WLF file "./wlftk249m0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftk249m0
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Input1: 1010, Input2: 0001, Output: 1001, Carry 1
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador_tb.sv(30)
+#    Time: 10 ps  Iteration: 0  Instance: /restador_tb
+# 1
+# Break in Module restador_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador_tb.sv line 30
+# End time: 18:40:16 on Mar 03,2024, Elapsed time: 5:44:32
+# Errors: 0, Warnings: 28

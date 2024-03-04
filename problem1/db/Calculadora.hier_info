@@ -1,4 +1,20 @@
 |restador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+Carryout << sumador:sumador1.Cout
+Result[0] << Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] << Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] << Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] << Result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter
 in[0] => in[0].IN1
 in[1] => in[1].IN1
 in[2] => in[2].IN1
@@ -7,10 +23,10 @@ out[0] <= sumador:misumador.Resul
 out[1] <= sumador:misumador.Resul
 out[2] <= sumador:misumador.Resul
 out[3] <= sumador:misumador.Resul
-out[4] <= sumador:misumador.Cout
+out[4] <= <GND>
 
 
-|restador|nand_d:loop[0].nand_inst
+|restador|inversor:inverter|nand_d:loop[0].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -19,7 +35,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|nand_d:loop[1].nand_inst
+|restador|inversor:inverter|nand_d:loop[1].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -28,7 +44,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|nand_d:loop[2].nand_inst
+|restador|inversor:inverter|nand_d:loop[2].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -37,7 +53,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|nand_d:loop[3].nand_inst
+|restador|inversor:inverter|nand_d:loop[3].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -46,7 +62,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|sumador:misumador
+|restador|inversor:inverter|sumador:misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -62,7 +78,7 @@ Resul[2] <= sumador1bit:forloop[2].misumador.s
 Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
-|restador|sumador:misumador|sumador1bit:forloop[0].misumador
+|restador|inversor:inverter|sumador:misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -76,7 +92,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|sumador:misumador|sumador1bit:forloop[1].misumador
+|restador|inversor:inverter|sumador:misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -90,7 +106,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|sumador:misumador|sumador1bit:forloop[2].misumador
+|restador|inversor:inverter|sumador:misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -104,7 +120,199 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|restador|sumador:misumador|sumador1bit:forloop[3].misumador
+|restador|inversor:inverter|sumador:misumador|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|sumador:sumador1
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+Cout <= sumador1bit:forloop[3].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+
+
+|restador|sumador:sumador1|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|sumador:sumador1|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|sumador:sumador1|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|sumador:sumador1|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2
+in[0] => in[0].IN1
+in[1] => in[1].IN1
+in[2] => in[2].IN1
+in[3] => in[3].IN1
+out[0] <= sumador:misumador.Resul
+out[1] <= sumador:misumador.Resul
+out[2] <= sumador:misumador.Resul
+out[3] <= sumador:misumador.Resul
+out[4] <= <GND>
+
+
+|restador|inversor:inverter2|nand_d:loop[0].nand_inst
+a[0] => y.IN0
+a[1] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|nand_d:loop[1].nand_inst
+a[0] => y.IN0
+a[1] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|nand_d:loop[2].nand_inst
+a[0] => y.IN0
+a[1] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|nand_d:loop[3].nand_inst
+a[0] => y.IN0
+a[1] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|sumador:misumador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+Cout <= sumador1bit:forloop[3].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+
+
+|restador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|restador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0

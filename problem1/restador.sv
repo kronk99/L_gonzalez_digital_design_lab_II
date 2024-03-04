@@ -1,53 +1,38 @@
 
-
-module restador #(parameter N = 4) ( //Se utiliza para invertir el numero
-    input logic [N-1:0] in,
-    output logic [N:0] out
-);
-	 //logics para el sumador
-	 logic Couto;
+module restador #(parameter BITS= 4) (input logic [BITS-1:0] num1, num2, output logic
+Carryout, output logic [BITS-1:0] Result);
+		logic [BITS-1:0] int_res;
+		logic [BITS-1:0] int_resO;
+		logic [BITS-1:0] int_resI;
+		logic [BITS-1:0] num2C;
+    // Se convierte en complemento 1 el numero negativo
+    inversor #(BITS) inverter (
+        .in(num2),
+        .out(num2C)
+    );
 	 
-	 logic  [N-1:0] Result;
-	 logic  [N-1:0] uno;//declaracion del numero 1 en su forma de N bits
-	 //necesario ára sumarle 1 al numero de N bits
-	 logic  [N:0] numInvertido;
-    logic [N-1:0] intermediate_out;
-	 //el codigo es para definir el 1, si N es 1 no se realiza.
+	 sumador #(BITS) sumador1(.num1(num1), 
+	 .num2(num2C), .Cout(Carryout), 
+	 .Resul(int_res)
+	 );
+	 
 	 always_comb begin
-        uno = (N == 1) ? 1'b1 : {{N-1{1'b0}}, 1'b1};
-    end
-	 //fin del codigo.
-    genvar i;
-    generate
-        for (i = 0; i < N; i++) begin: loop
-            nand_d #(2) nand_inst (
-                .a(in[i]),
-                .b(1'b1),
-                .y(intermediate_out[i])
-            );
-        end
-    endgenerate
-	
-	 //assign out = intermediate_out; //esto me produce un resultado al que hay que sumarle
-	 //1 entonces
-	 sumador #(N) misumador(.num1(intermediate_out), .num2(uno), .Cout(Couto), .Resul(Result));
-	 genvar j;
-    generate
-        for (j = 0; j < N; j++) begin: loop2
-           assign numInvertido[j]=Result[j];
-        end
-    endgenerate
-	 assign numInvertido[N]=Couto;
-	 assign out = numInvertido;
-endmodule
-
-module nand_d #(parameter WIDTH = 1) (
-    input logic [WIDTH-1:0] a,
-    input logic [WIDTH-1:0] b,
-    output logic [WIDTH-1:0] y
-);
-
-    assign y = ~(a & b);
+		if (Carryout == 1) begin
+			int_resO = 'b0;
+			Result = int_res;
+		end
+		else begin
+			int_resO = int_res;
+			Result = int_resI;
+			end
+		end
+	 inversor #(BITS) inverter2 (
+			  .in(int_resO),
+			  .out(int_resI)
+		 );
 
 endmodule
+
+
+
 
