@@ -10,34 +10,34 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:51:53 on Mar 03,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv 
-# -- Compiling module multiplicador
+# Start time: 23:31:37 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv 
+# -- Compiling module andoperation
 # 
 # Top level modules:
-# 	multiplicador
-# End time: 22:51:53 on Mar 03,2024, Elapsed time: 0:00:00
+# 	andoperation
+# End time: 23:31:37 on Mar 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:51:53 on Mar 03,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv 
-# -- Compiling module multiplicador_tb
+# Start time: 23:31:37 on Mar 03,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv 
+# -- Compiling module andoperation_tb
 # 
 # Top level modules:
-# 	multiplicador_tb
-# End time: 22:51:53 on Mar 03,2024, Elapsed time: 0:00:00
+# 	andoperation_tb
+# End time: 23:31:37 on Mar 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  multiplicador_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" multiplicador_tb 
-# Start time: 22:51:54 on Mar 03,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  andoperation_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" andoperation_tb 
+# Start time: 23:31:37 on Mar 03,2024
 # Loading sv_std.std
-# Loading work.multiplicador_tb
-# Loading work.multiplicador
+# Loading work.andoperation_tb
+# Loading work.andoperation
 # 
 # add wave *
 # view structure
@@ -45,11 +45,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Multiplying a = 0a, b = 05
-# Result = 0032
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv(32)
-#    Time: 10 ps  Iteration: 0  Instance: /multiplicador_tb
+# Result = 82
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv(28)
+#    Time: 20 ps  Iteration: 0  Instance: /andoperation_tb
 # 1
-# Break in Module multiplicador_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv line 32
-# End time: 22:54:03 on Mar 03,2024, Elapsed time: 0:02:09
+# Break in Module andoperation_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv line 28
+# End time: 23:31:56 on Mar 03,2024, Elapsed time: 0:00:19
 # Errors: 0, Warnings: 0

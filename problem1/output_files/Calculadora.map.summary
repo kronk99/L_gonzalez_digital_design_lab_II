@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Mar 03 22:51:44 2024
+Analysis & Elaboration Status : Successful - Sun Mar 03 23:31:30 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Calculadora
-Top-level Entity Name : multiplicador
+Top-level Entity Name : andoperation
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

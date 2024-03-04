@@ -9,54 +9,54 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/simulation/modelsim
-vmultiplicador
+vandoperation
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1709527913
+Z2 !s110 1709530297
 !i10b 1
-!s100 KDX<<Yc>iTSJfXDURk78T0
+!s100 EO;oBaK0TPUMQ2Ml=lSIh2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IYE<k]h:ol1SMDcEVlQnmN1
+IgFT?C?SL?N<6i[X8bMoLM1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1709527881
-8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
-FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
+w1709529669
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
 !i122 0
-L0 1 19
+L0 1 18
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1709527913.000000
-!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
+Z6 !s108 1709530297.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
 !i113 1
 Z7 o-sv -work work
 Z8 !s92 -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1
 Z9 tCvgOpt 0
-vmultiplicador_tb
+vandoperation_tb
 R1
 R2
 !i10b 1
-!s100 `mzQ2nH2]U@9Ff17I;Q3A0
+!s100 2?U[2kQPK8P7TgmFiSzDS2
 R3
-IbSjBg[9EhF7N3VmQ4QaI`1
+IgLPWQ7Ck@]d9DLIohI3AO0
 R4
 S1
 R0
-w1709527882
-8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv
-FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv
+w1709530253
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv
 !i122 1
-L0 1 35
+L0 1 31
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_tb.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv|
 !i113 1
 R7
 R8
