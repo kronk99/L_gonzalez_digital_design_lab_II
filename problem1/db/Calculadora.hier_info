@@ -1,4 +1,4 @@
-|oroperator
+|xoroperator
 a[0] => temp_result.IN0
 a[1] => temp_result.IN0
 a[2] => temp_result.IN0
