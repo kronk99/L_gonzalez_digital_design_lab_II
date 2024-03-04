@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY xoroperator
+set_global_assignment -name TOP_LEVEL_ENTITY shiftright
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:37:20  FEBRUARY 23, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -56,7 +56,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH xoroperator_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH shiftright_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME testbench -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
@@ -85,6 +85,16 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id oroperator_t
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME oroperator_tb -section_id oroperator_tb
 set_global_assignment -name SYSTEMVERILOG_FILE xoroperator.sv
 set_global_assignment -name SYSTEMVERILOG_FILE xoroperator_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME xoroperator_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id xoroperator_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME xoroperator_tb -section_id xoroperator_tb
+set_global_assignment -name SYSTEMVERILOG_FILE shiftleft.sv
+set_global_assignment -name SYSTEMVERILOG_FILE shiftleft_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME shiftleft_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shiftleft_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shiftleft_tb -section_id shiftleft_tb
+set_global_assignment -name SYSTEMVERILOG_FILE shiftright.sv
+set_global_assignment -name SYSTEMVERILOG_FILE shiftright_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -93,8 +103,10 @@ set_global_assignment -name EDA_TEST_BENCH_FILE Divisor_tb.sv -section_id Diviso
 set_global_assignment -name EDA_TEST_BENCH_FILE multiplicador_tb.sv -section_id multiplicador_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE andoperation_tb.sv -section_id andoperation_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE oroperator_tb.sv -section_id oroperator_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME xoroperator_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id xoroperator_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME xoroperator_tb -section_id xoroperator_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE xoroperator_tb.sv -section_id xoroperator_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE shiftleft_tb.sv -section_id shiftleft_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME shiftright_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shiftright_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shiftright_tb -section_id shiftright_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE shiftright_tb.sv -section_id shiftright_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

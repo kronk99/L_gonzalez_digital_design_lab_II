@@ -10,34 +10,34 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:07:07 on Mar 04,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv 
-# -- Compiling module xoroperator
+# Start time: 09:36:06 on Mar 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv 
+# -- Compiling module shiftright
 # 
 # Top level modules:
-# 	xoroperator
-# End time: 09:07:07 on Mar 04,2024, Elapsed time: 0:00:00
+# 	shiftright
+# End time: 09:36:06 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:07:07 on Mar 04,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator_tb.sv 
-# -- Compiling module xoroperator_tb
+# Start time: 09:36:06 on Mar 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv 
+# -- Compiling module shiftright_tb
 # 
 # Top level modules:
-# 	xoroperator_tb
-# End time: 09:07:07 on Mar 04,2024, Elapsed time: 0:00:00
+# 	shiftright_tb
+# End time: 09:36:06 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  xoroperator_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" xoroperator_tb 
-# Start time: 09:07:08 on Mar 04,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  shiftright_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" shiftright_tb 
+# Start time: 09:36:07 on Mar 04,2024
 # Loading sv_std.std
-# Loading work.xoroperator_tb
-# Loading work.xoroperator
+# Loading work.shiftright_tb
+# Loading work.shiftright
 # 
 # add wave *
 # view structure
@@ -45,10 +45,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Result = 3c
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator_tb.sv(28)
-#    Time: 20 ps  Iteration: 0  Instance: /xoroperator_tb
+# Result = 4b
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv(28)
+#    Time: 20 ps  Iteration: 0  Instance: /shiftright_tb
 # 1
-# Break in Module xoroperator_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator_tb.sv line 28
-# End time: 09:07:25 on Mar 04,2024, Elapsed time: 0:00:17
+# Break in Module shiftright_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv line 28
+# End time: 09:36:33 on Mar 04,2024, Elapsed time: 0:00:26
 # Errors: 0, Warnings: 0

@@ -1,27 +1,27 @@
-|xoroperator
-a[0] => temp_result.IN0
-a[1] => temp_result.IN0
-a[2] => temp_result.IN0
-a[3] => temp_result.IN0
-a[4] => temp_result.IN0
-a[5] => temp_result.IN0
-a[6] => temp_result.IN0
-a[7] => temp_result.IN0
-b[0] => temp_result.IN1
-b[1] => temp_result.IN1
-b[2] => temp_result.IN1
-b[3] => temp_result.IN1
-b[4] => temp_result.IN1
-b[5] => temp_result.IN1
-b[6] => temp_result.IN1
-b[7] => temp_result.IN1
-result[0] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+|shiftright
+a[0] => ~NO_FANOUT~
+a[1] => result[0].DATAIN
+a[2] => result[1].DATAIN
+a[3] => result[2].DATAIN
+a[4] => result[3].DATAIN
+a[5] => result[4].DATAIN
+a[6] => result[5].DATAIN
+a[7] => result[6].DATAIN
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+result[0] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= <GND>
 
 
