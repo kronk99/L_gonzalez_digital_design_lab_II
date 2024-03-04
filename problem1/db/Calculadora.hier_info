@@ -1,4 +1,4 @@
-|andoperation
+|oroperator
 a[0] => temp_result.IN0
 a[1] => temp_result.IN0
 a[2] => temp_result.IN0
@@ -15,13 +15,13 @@ b[4] => temp_result.IN1
 b[5] => temp_result.IN1
 b[6] => temp_result.IN1
 b[7] => temp_result.IN1
-result[0] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[1] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[2] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[3] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[4] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[5] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[6] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
-result[7] << temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 
 

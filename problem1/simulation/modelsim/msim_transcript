@@ -10,34 +10,34 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:31:37 on Mar 03,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv 
-# -- Compiling module andoperation
+# Start time: 08:57:22 on Mar 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv 
+# -- Compiling module oroperator
 # 
 # Top level modules:
-# 	andoperation
-# End time: 23:31:37 on Mar 03,2024, Elapsed time: 0:00:00
+# 	oroperator
+# End time: 08:57:22 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:31:37 on Mar 03,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv 
-# -- Compiling module andoperation_tb
+# Start time: 08:57:22 on Mar 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator_tb.sv 
+# -- Compiling module oroperator_tb
 # 
 # Top level modules:
-# 	andoperation_tb
-# End time: 23:31:37 on Mar 03,2024, Elapsed time: 0:00:00
+# 	oroperator_tb
+# End time: 08:57:22 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  andoperation_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" andoperation_tb 
-# Start time: 23:31:37 on Mar 03,2024
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  oroperator_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" oroperator_tb 
+# Start time: 08:57:22 on Mar 04,2024
 # Loading sv_std.std
-# Loading work.andoperation_tb
-# Loading work.andoperation
+# Loading work.oroperator_tb
+# Loading work.oroperator
 # 
 # add wave *
 # view structure
@@ -45,10 +45,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Result = 82
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv(28)
-#    Time: 20 ps  Iteration: 0  Instance: /andoperation_tb
+# Result = be
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator_tb.sv(28)
+#    Time: 20 ps  Iteration: 0  Instance: /oroperator_tb
 # 1
-# Break in Module andoperation_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation_tb.sv line 28
-# End time: 23:31:56 on Mar 03,2024, Elapsed time: 0:00:19
+# Break in Module oroperator_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator_tb.sv line 28
+# End time: 08:57:38 on Mar 04,2024, Elapsed time: 0:00:16
 # Errors: 0, Warnings: 0
