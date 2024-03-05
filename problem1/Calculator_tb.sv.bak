@@ -1,0 +1,36 @@
+module Calculator_tb;
+
+	parameter N = 4;
+    // Declare signals
+    logic [3:0] op_select;
+    logic [N-1:0] operand1, operand2;
+	 logic [2*N-1:0] 
+
+    // Instantiate the unit under test (UUT)
+    Calculator calculatortest (
+        .op_select(op_select),
+        .operand1(operand1),
+        .operand2(operand2),
+        .result(result)
+    );
+
+    // Stimulus
+    initial begin
+        // Test case 1: Addition
+        op_select = 4'b0000;
+        operand1 = 4'b0111;
+        operand2 = 4'b0001;
+        #10;
+		  
+		  // Test case 2: Substraction
+        op_select = 4'b0001;
+        operand1 = 4'b1000;
+        operand2 = 4'b0001;
+
+        // Add more test cases as needed
+
+        // End simulation
+        $finish;
+    end
+
+endmodule

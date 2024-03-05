@@ -20,7 +20,6 @@ module restador_tb;
 
     // Stimulus
     initial begin
-        // Test case 3: Random input
         in_signal = 4'b1010;
         in_signal2 = 4'b0001;
         #10; // Wait for 10 time units

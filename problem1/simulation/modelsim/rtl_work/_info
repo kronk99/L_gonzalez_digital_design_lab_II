@@ -9,55 +9,370 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/simulation/modelsim
-vshiftright
+vandoperation
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1709566566
+Z2 !s110 1709601448
+!i10b 1
+!s100 EO;oBaK0TPUMQ2Ml=lSIh2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IgFT?C?SL?N<6i[X8bMoLM1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1709529669
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
+!i122 6
+Z5 L0 1 18
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1709601448.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1
+Z10 tCvgOpt 0
+vCalculator
+R1
+R2
+!i10b 1
+!s100 JNUEA]UJb=ARfeANFTjMV3
+R3
+IfGPXEW0X8@gaIHAP;hUmH1
+R4
+S1
+R0
+w1709595930
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv
+!i122 11
+L0 1 58
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv|
+!i113 1
+R8
+R9
+R10
+n@calculator
+vCalculator_tb
+R1
+R2
+!i10b 1
+!s100 @C>RBd9ZKSS_b>H0d3ah21
+R3
+IRf21V@JSCXjbdDcjgn3To1
+R4
+S1
+R0
+w1709601433
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv
+!i122 12
+L0 3 52
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv|
+!i113 1
+R8
+R9
+R10
+n@calculator_tb
+vDivisor
+R1
+R2
+!i10b 1
+!s100 ;6RcFE>QO]ma6`HnO]k470
+R3
+IJAD34Pj?K]dS<VHI3Ko1f2
+R4
+S1
+R0
+w1709524701
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv
+!i122 2
+Z11 L0 1 33
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv|
+!i113 1
+R8
+R9
+R10
+n@divisor
+vinversor
+R1
+R2
+!i10b 1
+!s100 ]bI74^1hVZB[THI?T[9il3
+R3
+I1UhmJCnKWlU`I6g7KDW<B2
+R4
+S1
+R0
+Z12 w1709595855
+Z13 8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv
+Z14 FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv
+!i122 3
+L0 1 40
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv|
+!i113 1
+R8
+R9
+R10
+vmultiplicador
+R1
+R2
+!i10b 1
+!s100 KDX<<Yc>iTSJfXDURk78T0
+R3
+IYE<k]h:ol1SMDcEVlQnmN1
+R4
+S1
+R0
+w1709527881
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
+!i122 5
+L0 1 19
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
+!i113 1
+R8
+R9
+R10
+vnand_d
+R1
+R2
+!i10b 1
+!s100 Z:n4Z<F7Xa7zNiN?gFFlL3
+R3
+IlU<P]17[m?oQV2RR;V4=L3
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 3
+L0 42 9
+R6
+r1
+!s85 0
+31
+R7
+R15
+R16
+!i113 1
+R8
+R9
+R10
+voroperator
+R1
+R2
+!i10b 1
+!s100 lRGk0i12TQ0CCHkdmoN1A3
+R3
+IhMWkM3jP;FB;0X152fzGk0
+R4
+S1
+R0
+w1709564227
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv
+!i122 7
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv|
+!i113 1
+R8
+R9
+R10
+vrestador
+R1
+R2
+!i10b 1
+!s100 ;GVoEBEzPh>?mj_<9oY2E1
+R3
+IXdnVnb2DG:AR[E_VU=0`J2
+R4
+S1
+R0
+w1709595821
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv
+!i122 4
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv|
+!i113 1
+R8
+R9
+R10
+vshiftleft
+R1
+R2
+!i10b 1
+!s100 :8M]>4d>ON2l1zZ6KCTI53
+R3
+IY3=d5Am:ARjLSC@F]VJEV0
+R4
+S1
+R0
+w1709566220
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv
+!i122 9
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv|
+!i113 1
+R8
+R9
+R10
+vshiftright
+R1
+R2
 !i10b 1
 !s100 PSMg[CN]_RXg=?nzo@TKC1
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R3
 Id4[Hk_K0WdnCb<=e9JiGF0
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+R4
 S1
 R0
 w1709566334
 8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv
 FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv
-!i122 0
-L0 1 18
-Z5 OV;L;2020.1;71
+!i122 10
+R5
+R6
 r1
 !s85 0
 31
-Z6 !s108 1709566566.000000
+R7
 !s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1
-Z9 tCvgOpt 0
-vshiftright_tb
+R8
+R9
+R10
+vsumador
 R1
 R2
 !i10b 1
-!s100 `IHlmdZkD3<892X6XlKC02
+!s100 5lV_H97df4H2z4TeVco1R1
 R3
-IfRU:<;[XXR`UU^`6KP`lR3
+I3WDZBA[X^oNfOcTk62g:A1
 R4
 S1
 R0
-w1709566363
-8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv
-FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv
+w1709588941
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv
 !i122 1
-L0 1 31
 R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright_tb.sv|
-!i113 1
 R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv|
+!i113 1
 R8
 R9
+R10
+vsumador1bit
+R1
+R2
+!i10b 1
+!s100 IZW1m=ig=SS1@=?SON6P>3
+R3
+Ij:SdHe=i:Z6i7KX2dL0R93
+R4
+S1
+R0
+w1709348390
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv
+!i122 0
+L0 1 4
+R6
+r1
+!s85 0
+31
+!s108 1709601447.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv|
+!i113 1
+R8
+R9
+R10
+vxoroperator
+R1
+R2
+!i10b 1
+!s100 Yl[IP2Cd>WPC>?J4:bbEK0
+R3
+IUbMEzL]G<M^haUB`HB?LF3
+R4
+S1
+R0
+w1709564745
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv
+!i122 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv|
+!i113 1
+R8
+R9
+R10

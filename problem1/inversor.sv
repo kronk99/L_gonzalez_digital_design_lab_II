@@ -28,7 +28,7 @@ module inversor #(parameter N = 4) ( //Se utiliza para invertir el numero
 	
 	 //assign out = intermediate_out; //esto me produce un resultado al que hay que sumarle
 	 //1 entonces
-	 sumador #(N) misumador(.num1(intermediate_out), .num2(uno), .Cout(Couto), .Resul(Result));
+	 sumador #(N) misumador(.num1(intermediate_out), .num2(uno), .Cout(Couto), .result(Result));
 	 genvar j;
     generate
         for (j = 0; j < N; j++) begin: loop2
