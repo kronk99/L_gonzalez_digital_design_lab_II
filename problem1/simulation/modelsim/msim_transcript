@@ -12,140 +12,140 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:27 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv 
 # -- Compiling module sumador1bit
 # 
 # Top level modules:
 # 	sumador1bit
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:01
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv 
 # -- Compiling module sumador
 # 
 # Top level modules:
 # 	sumador
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv 
 # -- Compiling module Divisor
 # 
 # Top level modules:
 # 	Divisor
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv 
 # -- Compiling module inversor
 # -- Compiling module nand_d
 # 
 # Top level modules:
 # 	inversor
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv 
 # -- Compiling module restador
 # 
 # Top level modules:
 # 	restador
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv 
 # -- Compiling module multiplicador
 # 
 # Top level modules:
 # 	multiplicador
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:04:59 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv 
 # -- Compiling module andoperation
 # 
 # Top level modules:
 # 	andoperation
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:04:59 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv 
 # -- Compiling module oroperator
 # 
 # Top level modules:
 # 	oroperator
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv 
 # -- Compiling module xoroperator
 # 
 # Top level modules:
 # 	xoroperator
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv 
 # -- Compiling module shiftleft
 # 
 # Top level modules:
 # 	shiftleft
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv 
 # -- Compiling module shiftright
 # 
 # Top level modules:
 # 	shiftright
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv 
 # -- Compiling module Calculator
 # 
 # Top level modules:
 # 	Calculator
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1 {C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:28 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1" C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv 
 # -- Compiling module Calculator_tb
 # 
 # Top level modules:
 # 	Calculator_tb
-# End time: 19:17:28 on Mar 04,2024, Elapsed time: 0:00:00
+# End time: 23:05:00 on Mar 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Calculator_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Calculator_tb 
-# Start time: 19:17:29 on Mar 04,2024
+# Start time: 23:05:00 on Mar 04,2024
 # Loading sv_std.std
 # Loading work.Calculator_tb
 # Loading work.Calculator
@@ -221,17 +221,39 @@
 #    Time: 0 ps  Iteration: 0  Instance: /Calculator_tb/uut/myrestador/inverter2/loop[3]/nand_inst File: C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv Line: 21
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: andre  Hostname: ANDG  ProcessID: 2932
+#           Attempting to use alternate WLF file "./wlftj9mf2b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj9mf2b
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Input1: 0000, Input2: 0001, Output: 0001, Carry 00000010
-# Input1: 0001, Input2: 0011, Output: 0001, Carry 00000010
-# Input1: 0010, Input2: 0011, Output: 0011, Carry 00001001
-# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv(51)
-#    Time: 30 ns  Iteration: 0  Instance: /Calculator_tb
+# Selector: 0000, Input1: 0001, Input2: 0001, Output 00000010
+# Selector: 0000, Input1: 0101, Input2: 0011, Output 00001000
+# Selector: 0001, Input1: 0011, Input2: 0001, Output 00000010
+# Selector: 0001, Input1: 0011, Input2: 0101, Output 00000010
+# Selector: 0010, Input1: 0011, Input2: 0011, Output 00001001
+# Selector: 0010, Input1: 1111, Input2: 0011, Output 00101101
+# Selector: 0011, Input1: 0011, Input2: 0011, Output 00000001
+# Selector: 0011, Input1: 1110, Input2: 0010, Output 00000111
+# Selector: 0100, Input1: 0011, Input2: 0011, Output 00000000
+# Selector: 0100, Input1: 1111, Input2: 0010, Output 00000001
+# Selector: 0101, Input1: 1011, Input2: 0011, Output 00000011
+# Selector: 0101, Input1: 1110, Input2: 0010, Output 00000010
+# Selector: 0110, Input1: 0011, Input2: 0011, Output 00000011
+# Selector: 0110, Input1: 1110, Input2: 0010, Output 00001110
+# Selector: 0111, Input1: 0011, Input2: 0011, Output 00000000
+# Selector: 0111, Input1: 1110, Input2: 0010, Output 00001100
+# Selector: 1000, Input1: 0011, Input2: 0011, Output 00000110
+# Selector: 1000, Input1: 1110, Input2: 0010, Output 00011100
+# Selector: 1001, Input1: 0011, Input2: 0011, Output 00000001
+# Selector: 1001, Input1: 1110, Input2: 0010, Output 00000111
+# ** Note: $finish    : C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv(171)
+#    Time: 200 ns  Iteration: 0  Instance: /Calculator_tb
 # 1
-# Break in Module Calculator_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv line 51
-# End time: 19:19:26 on Mar 04,2024, Elapsed time: 0:01:57
-# Errors: 0, Warnings: 30
+# Break in Module Calculator_tb at C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv line 171
+# End time: 23:05:27 on Mar 04,2024, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 32

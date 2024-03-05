@@ -656,7 +656,7 @@ result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 a[0] => result[1].DATAIN
 a[1] => result[2].DATAIN
 a[2] => result[3].DATAIN
-a[3] => ~NO_FANOUT~
+a[3] => result[4].DATAIN
 b[0] => ~NO_FANOUT~
 b[1] => ~NO_FANOUT~
 b[2] => ~NO_FANOUT~
@@ -665,6 +665,7 @@ result[0] <= <GND>
 result[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|shiftright:myshiftr

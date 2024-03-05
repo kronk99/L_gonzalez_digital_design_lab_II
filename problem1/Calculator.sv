@@ -17,7 +17,7 @@ module Calculator //Full module that uses a multiplexor
 	 logic [N-1:0] res_and;
 	 logic [N-1:0] res_or;
 	 logic [N-1:0] res_xor;
-	 logic [N-1:0] res_sl;
+	 logic [N:0] res_sl;
 	 logic [N-1:0] res_sr;
 	 
 	 sumador #(N) mysumador( .num1(operand1), .num2(operand2), .result(res_s)); //Addition
