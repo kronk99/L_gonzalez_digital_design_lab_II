@@ -19,10 +19,12 @@ module Calculator //Full module that uses a multiplexor
 	 logic [N-1:0] res_xor;
 	 logic [N:0] res_sl;
 	 logic [N-1:0] res_sr;
+	 logic overflow;
+	 logic cout;
 	 
-	 sumador #(N) mysumador( .num1(operand1), .num2(operand2), .result(res_s)); //Addition
+	 sumador #(N) mysumador( .num1(operand1), .num2(operand2),.Cin(0),.Cout(cout) ,.Resul(res_s)); //Addition
 	 restador #(N) myrestador(.num1(operand1), .num2(operand2), .Result(res_r)); //Substraction
-	 multiplicador #(N) mymultiplicador(.a(operand1), .b(operand2), .result(res_m)); //Multiplication
+	 multiplicador #(N) mymultiplicador(.num1(operand1), .num2(operand2), .Result(res_m),.OFLOW(overflow)); //Multiplication
 	 Divisor #(N) mydivisor(.dividend(operand1), .divisor(operand2), .quotient(res_d), .remainder(res_md)); //Division
 	 //Module
 	 andoperation #(N) myand(.a(operand1), .b(operand2), .result(res_and)); //AND

@@ -11,8 +11,8 @@ Carryout, output logic [BITS-1:0] Result);
     );
 	 
 	 sumador #(BITS) sumador1(.num1(num1), 
-	 .num2(num2C), .Cout(Carryout), 
-	 .result(int_res)
+	 .num2(num2C),.Cin(0), .Cout(Carryout), 
+	 .Resul(int_res)
 	 );
 	 
 	 always_comb begin

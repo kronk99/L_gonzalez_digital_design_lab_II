@@ -1,24 +1,28 @@
 |Calculator
 op_select[0] => Decoder0.IN3
-op_select[0] => Mux0.IN3
+op_select[0] => Mux0.IN16
 op_select[0] => Mux1.IN3
 op_select[0] => Mux2.IN3
 op_select[0] => Mux3.IN3
+op_select[0] => Mux4.IN3
 op_select[1] => Decoder0.IN2
-op_select[1] => Mux0.IN2
+op_select[1] => Mux0.IN15
 op_select[1] => Mux1.IN2
 op_select[1] => Mux2.IN2
 op_select[1] => Mux3.IN2
+op_select[1] => Mux4.IN2
 op_select[2] => Decoder0.IN1
-op_select[2] => Mux0.IN1
+op_select[2] => Mux0.IN14
 op_select[2] => Mux1.IN1
 op_select[2] => Mux2.IN1
 op_select[2] => Mux3.IN1
+op_select[2] => Mux4.IN1
 op_select[3] => Decoder0.IN0
-op_select[3] => Mux0.IN0
+op_select[3] => Mux0.IN13
 op_select[3] => Mux1.IN0
 op_select[3] => Mux2.IN0
 op_select[3] => Mux3.IN0
+op_select[3] => Mux4.IN0
 operand1[0] => operand1[0].IN9
 operand1[1] => operand1[1].IN9
 operand1[2] => operand1[2].IN9
@@ -27,14 +31,14 @@ operand2[0] => operand2[0].IN9
 operand2[1] => operand2[1].IN9
 operand2[2] => operand2[2].IN9
 operand2[3] => operand2[3].IN9
-resultado[0] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
-resultado[1] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
-resultado[2] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
-resultado[3] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
-resultado[4] << resultado.DB_MAX_OUTPUT_PORT_TYPE
-resultado[5] << resultado.DB_MAX_OUTPUT_PORT_TYPE
-resultado[6] << resultado.DB_MAX_OUTPUT_PORT_TYPE
-resultado[7] << resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+resultado[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+resultado[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+resultado[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+resultado[4] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+resultado[5] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[6] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[7] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|sumador:mysumador
@@ -46,11 +50,15 @@ num2[0] => num2[0].IN1
 num2[1] => num2[1].IN1
 num2[2] => num2[2].IN1
 num2[3] => num2[3].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
 Cout <= sumador1bit:forloop[3].misumador.Cout
-result[0] <= sumador1bit:forloop[0].misumador.s
-result[1] <= sumador1bit:forloop[1].misumador.s
-result[2] <= sumador1bit:forloop[2].misumador.s
-result[3] <= sumador1bit:forloop[3].misumador.s
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
 |Calculator|sumador:mysumador|sumador1bit:forloop[0].misumador
@@ -130,10 +138,10 @@ in[0] => in[0].IN1
 in[1] => in[1].IN1
 in[2] => in[2].IN1
 in[3] => in[3].IN1
-out[0] <= sumador:misumador.result
-out[1] <= sumador:misumador.result
-out[2] <= sumador:misumador.result
-out[3] <= sumador:misumador.result
+out[0] <= sumador:misumador.Resul
+out[1] <= sumador:misumador.Resul
+out[2] <= sumador:misumador.Resul
+out[3] <= sumador:misumador.Resul
 out[4] <= <GND>
 
 
@@ -182,11 +190,15 @@ num2[0] => num2[0].IN1
 num2[1] => num2[1].IN1
 num2[2] => num2[2].IN1
 num2[3] => num2[3].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
 Cout <= sumador1bit:forloop[3].misumador.Cout
-result[0] <= sumador1bit:forloop[0].misumador.s
-result[1] <= sumador1bit:forloop[1].misumador.s
-result[2] <= sumador1bit:forloop[2].misumador.s
-result[3] <= sumador1bit:forloop[3].misumador.s
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
 |Calculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[0].misumador
@@ -254,11 +266,15 @@ num2[0] => num2[0].IN1
 num2[1] => num2[1].IN1
 num2[2] => num2[2].IN1
 num2[3] => num2[3].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
 Cout <= sumador1bit:forloop[3].misumador.Cout
-result[0] <= sumador1bit:forloop[0].misumador.s
-result[1] <= sumador1bit:forloop[1].misumador.s
-result[2] <= sumador1bit:forloop[2].misumador.s
-result[3] <= sumador1bit:forloop[3].misumador.s
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
 |Calculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[0].misumador
@@ -322,10 +338,10 @@ in[0] => in[0].IN1
 in[1] => in[1].IN1
 in[2] => in[2].IN1
 in[3] => in[3].IN1
-out[0] <= sumador:misumador.result
-out[1] <= sumador:misumador.result
-out[2] <= sumador:misumador.result
-out[3] <= sumador:misumador.result
+out[0] <= sumador:misumador.Resul
+out[1] <= sumador:misumador.Resul
+out[2] <= sumador:misumador.Resul
+out[3] <= sumador:misumador.Resul
 out[4] <= <GND>
 
 
@@ -374,11 +390,15 @@ num2[0] => num2[0].IN1
 num2[1] => num2[1].IN1
 num2[2] => num2[2].IN1
 num2[3] => num2[3].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
 Cout <= sumador1bit:forloop[3].misumador.Cout
-result[0] <= sumador1bit:forloop[0].misumador.s
-result[1] <= sumador1bit:forloop[1].misumador.s
-result[2] <= sumador1bit:forloop[2].misumador.s
-result[3] <= sumador1bit:forloop[3].misumador.s
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
 |Calculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[0].misumador
@@ -438,22 +458,615 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|multiplicador:mymultiplicador
-a[0] => Mult0.IN3
-a[1] => Mult0.IN2
-a[2] => Mult0.IN1
-a[3] => Mult0.IN0
-b[0] => Mult0.IN7
-b[1] => Mult0.IN6
-b[2] => Mult0.IN5
-b[3] => Mult0.IN4
-result[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+num1[0] => num1[0].IN4
+num1[1] => num1[1].IN4
+num1[2] => num1[2].IN4
+num1[3] => num1[3].IN4
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+Result[0] <= sumador:loop[3].misumador.Resul
+Result[1] <= sumador:loop[3].misumador.Resul
+Result[2] <= sumador:loop[3].misumador.Resul
+Result[3] <= sumador:loop[3].misumador.Resul
+Result[4] <= sumador:loop[3].misumador.Resul
+Result[5] <= sumador:loop[3].misumador.Resul
+Result[6] <= sumador:loop[3].misumador.Resul
+Result[7] <= <GND>
+OFLOW <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Array[0] => Result.IN1
+Array[1] => Result.IN1
+Array[2] => Result.IN1
+Array[3] => Result.IN1
+Result[0] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= <GND>
+Result[5] <= <GND>
+Result[6] <= <GND>
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num1[4] => num1[4].IN1
+num1[5] => num1[5].IN1
+num1[6] => num1[6].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+num2[4] => num2[4].IN1
+num2[5] => num2[5].IN1
+num2[6] => num2[6].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
+Cin[4] => ~NO_FANOUT~
+Cin[5] => ~NO_FANOUT~
+Cin[6] => ~NO_FANOUT~
+Cout <= sumador1bit:forloop[6].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+Resul[4] <= sumador1bit:forloop[4].misumador.s
+Resul[5] <= sumador1bit:forloop[5].misumador.s
+Resul[6] <= sumador1bit:forloop[6].misumador.s
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[4].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[5].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[6].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Array[0] => Result.IN1
+Array[1] => Result.IN1
+Array[2] => Result.IN1
+Array[3] => Result.IN1
+Result[0] <= <GND>
+Result[1] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= <GND>
+Result[6] <= <GND>
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num1[4] => num1[4].IN1
+num1[5] => num1[5].IN1
+num1[6] => num1[6].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+num2[4] => num2[4].IN1
+num2[5] => num2[5].IN1
+num2[6] => num2[6].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
+Cin[4] => ~NO_FANOUT~
+Cin[5] => ~NO_FANOUT~
+Cin[6] => ~NO_FANOUT~
+Cout <= sumador1bit:forloop[6].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+Resul[4] <= sumador1bit:forloop[4].misumador.s
+Resul[5] <= sumador1bit:forloop[5].misumador.s
+Resul[6] <= sumador1bit:forloop[6].misumador.s
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[4].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[5].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[6].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Array[0] => Result.IN1
+Array[1] => Result.IN1
+Array[2] => Result.IN1
+Array[3] => Result.IN1
+Result[0] <= <GND>
+Result[1] <= <GND>
+Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= <GND>
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num1[4] => num1[4].IN1
+num1[5] => num1[5].IN1
+num1[6] => num1[6].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+num2[4] => num2[4].IN1
+num2[5] => num2[5].IN1
+num2[6] => num2[6].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
+Cin[4] => ~NO_FANOUT~
+Cin[5] => ~NO_FANOUT~
+Cin[6] => ~NO_FANOUT~
+Cout <= sumador1bit:forloop[6].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+Resul[4] <= sumador1bit:forloop[4].misumador.s
+Resul[5] <= sumador1bit:forloop[5].misumador.s
+Resul[6] <= sumador1bit:forloop[6].misumador.s
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[4].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[5].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[6].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Bit => Result.IN0
+Array[0] => Result.IN1
+Array[1] => Result.IN1
+Array[2] => Result.IN1
+Array[3] => Result.IN1
+Result[0] <= <GND>
+Result[1] <= <GND>
+Result[2] <= <GND>
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador
+num1[0] => num1[0].IN1
+num1[1] => num1[1].IN1
+num1[2] => num1[2].IN1
+num1[3] => num1[3].IN1
+num1[4] => num1[4].IN1
+num1[5] => num1[5].IN1
+num1[6] => num1[6].IN1
+num2[0] => num2[0].IN1
+num2[1] => num2[1].IN1
+num2[2] => num2[2].IN1
+num2[3] => num2[3].IN1
+num2[4] => num2[4].IN1
+num2[5] => num2[5].IN1
+num2[6] => num2[6].IN1
+Cin[0] => Cin_l[0].IN1
+Cin[1] => ~NO_FANOUT~
+Cin[2] => ~NO_FANOUT~
+Cin[3] => ~NO_FANOUT~
+Cin[4] => ~NO_FANOUT~
+Cin[5] => ~NO_FANOUT~
+Cin[6] => ~NO_FANOUT~
+Cout <= sumador1bit:forloop[6].misumador.Cout
+Resul[0] <= sumador1bit:forloop[0].misumador.s
+Resul[1] <= sumador1bit:forloop[1].misumador.s
+Resul[2] <= sumador1bit:forloop[2].misumador.s
+Resul[3] <= sumador1bit:forloop[3].misumador.s
+Resul[4] <= sumador1bit:forloop[4].misumador.s
+Resul[5] <= sumador1bit:forloop[5].misumador.s
+Resul[6] <= sumador1bit:forloop[6].misumador.s
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[0].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[1].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[2].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[3].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[4].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[5].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[6].misumador
+a => Cout.IN0
+a => Cout.IN0
+a => s.IN0
+b => Cout.IN1
+b => Cout.IN0
+b => s.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => s.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Calculator|Divisor:mydivisor
