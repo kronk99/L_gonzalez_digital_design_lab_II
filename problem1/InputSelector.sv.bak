@@ -1,0 +1,18 @@
+module InputSelector(input logic a, b, c, d, output logic [3:0] num);
+    // Se instancian señales de salida del primer modulo
+	logic [6:0] salida;
+  // se intancian las entradas de entrada del primer modulo
+
+  // Lógica para formar el array resultado
+  always_comb begin
+    num = {a, b, c, d};  // Concatenación
+  end
+
+  // Instancia del segundo módulo (segmentos)
+  Segmentos miSegmento (
+    .bcd(num),
+    .seg(salida)
+  );
+  
+  
+endmodule

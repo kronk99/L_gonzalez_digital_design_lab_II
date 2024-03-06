@@ -1,0 +1,6 @@
+
+State Machine - |StateMachine|current_state
+Name current_state.Op_select current_state.res_show current_state.in_select 
+current_state.Op_select 0 0 0 
+current_state.in_select 1 0 1 
+current_state.res_show 1 1 0 

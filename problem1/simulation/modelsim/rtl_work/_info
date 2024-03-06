@@ -8,55 +8,55 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/simulation/modelsim
+Z0 dC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/simulation/modelsim
 vandoperation
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1709680567
+Z2 !s110 1709681151
 !i10b 1
 !s100 EO;oBaK0TPUMQ2Ml=lSIh2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I80j=^JD7PCSDNcS020S7H0
+IgFT?C?SL?N<6i[X8bMoLM1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1709591235
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/andoperation.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/andoperation.sv
+w1709529669
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv
 !i122 6
 Z5 L0 1 18
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1709680567.000000
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/andoperation.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/andoperation.sv|
+Z7 !s108 1709681151.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/andoperation.sv|
 !i113 1
 Z8 o-sv -work work
-Z9 !s92 -sv -work work +incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1
+Z9 !s92 -sv -work work +incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1
 Z10 tCvgOpt 0
 vCalculator
 R1
-Z11 !s110 1709680568
+Z11 !s110 1709681152
 !i10b 1
 !s100 @jaz[TSj3NH4eXXid8A4A3
 R3
-IH593@lOkV@HDdeP7Tl2_?1
+IkdLGcURbND=S>@V3fSB>]0
 R4
 S1
 R0
-w1709680502
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv
+Z12 w1709681049
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv
 !i122 11
 L0 1 60
 R6
 r1
 !s85 0
 31
-Z12 !s108 1709680568.000000
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv|
+Z13 !s108 1709681152.000000
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator.sv|
 !i113 1
 R8
 R9
@@ -68,22 +68,22 @@ R11
 !i10b 1
 !s100 ggY;;5_Y6hEbGEhO@iN@e0
 R3
-IK>JEBAYjAiMIS_mhIP65f2
+IQ;Sg>DfLl>LY>X]nfL]QO2
 R4
 S1
 R0
-Z13 w1709623836
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_tb.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_tb.sv
+w1709614808
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv
 !i122 13
 L0 3 172
 R6
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_tb.sv|
+R13
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Calculator_tb.sv|
 !i113 1
 R8
 R9
@@ -91,26 +91,26 @@ R10
 n@calculator_tb
 vDivisor
 R1
-Z14 !s110 1709680566
+R2
 !i10b 1
 !s100 b^Fo<EPPg3e7b:1ZQ`RGc2
 R3
-I1>ScL]9i1nb<G6eT0<4m:0
+I]SZoLdXN3dJd=<5oc^<D]1
 R4
 S1
 R0
-R13
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv
+Z14 w1709641490
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv
 !i122 2
 L0 1 32
 R6
 r1
 !s85 0
 31
-Z15 !s108 1709680566.000000
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv|
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/Divisor.sv|
 !i113 1
 R8
 R9
@@ -118,26 +118,26 @@ R10
 n@divisor
 vinversor
 R1
-R14
+R2
 !i10b 1
 !s100 Rj2@JBj7fAY06O@ZiWSYI1
 R3
-I6<86>zIe?WYinz:O]PNPc3
+Ia8F5kTcNBiSe]<MKIE@bz1
 R4
 S1
 R0
-Z16 w1709623837
-Z17 8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv
-Z18 FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv
+R14
+Z15 8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv
+Z16 FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv
 !i122 3
 L0 1 40
 R6
 r1
 !s85 0
 31
-R15
-Z19 !s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv|
+R7
+Z17 !s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/inversor.sv|
 !i113 1
 R8
 R9
@@ -148,22 +148,22 @@ R2
 !i10b 1
 !s100 _cUWM;HY1l20EHQfcL:Hd1
 R3
-I39BBFYzX;F7G4X]cfJ5PB0
+I?8b3Z]OZz8zSDXcC==I>=0
 R4
 S1
 R0
-R16
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv
+R14
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv
 !i122 5
 L0 1 38
 R6
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv|
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador.sv|
 !i113 1
 R8
 R9
@@ -174,22 +174,22 @@ R11
 !i10b 1
 !s100 ZX;oeLO5Y2]X4`@?QRl:13
 R3
-Io;Ibhj00``_h47=5bI5Ig2
+IYoJ<FGl4<;ZF[MRi=`i2e1
 R4
 S1
 R0
-R13
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv
+R14
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_1bit.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_1bit.sv
 !i122 12
 L0 1 23
 R6
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv|
+R13
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/multiplicador_1bit.sv|
 !i113 1
 R8
 R9
@@ -197,26 +197,26 @@ R10
 n@multiplicador_1bit
 vnand_d
 R1
-R14
+R2
 !i10b 1
 !s100 Z:n4Z<F7Xa7zNiN?gFFlL3
 R3
-I_jc:Okcz5PdVAG?2KNV[h2
+IlU<P]17[m?oQV2RR;V4=L3
 R4
 S1
 R0
+R14
+R15
 R16
-R17
-R18
 !i122 3
 L0 42 9
 R6
 r1
 !s85 0
 31
-R15
-R19
-R20
+R7
+R17
+R18
 !i113 1
 R8
 R9
@@ -227,13 +227,13 @@ R2
 !i10b 1
 !s100 lRGk0i12TQ0CCHkdmoN1A3
 R3
-IE7B5jQhGhNQFL;c2]YVnX2
+IhMWkM3jP;FB;0X152fzGk0
 R4
 S1
 R0
-Z21 w1709591236
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/oroperator.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/oroperator.sv
+w1709564227
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv
 !i122 7
 R5
 R6
@@ -241,34 +241,34 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/oroperator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/oroperator.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/oroperator.sv|
 !i113 1
 R8
 R9
 R10
 vrestador
 R1
-R14
+R2
 !i10b 1
 !s100 be`;L56;d7aFhUS_4=haT3
 R3
-Ia_;kadagRJFebi19_AU?62
+ILg6^1_f]AZS:OK?S[7k<A3
 R4
 S1
 R0
-w1709679609
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv
+R12
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv
 !i122 4
 L0 1 33
 R6
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv|
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/restador.sv|
 !i113 1
 R8
 R9
@@ -279,13 +279,13 @@ R2
 !i10b 1
 !s100 93B5lRJbIH]^7HT<b7X@W0
 R3
-Ib:b;I3A1g]ZPO@AJckWg02
+IQ1lYF78RIo8Y:bk>dTZXW3
 R4
 S1
 R0
-R16
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftleft.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftleft.sv
+w1709614994
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv
 !i122 9
 R5
 R6
@@ -293,8 +293,8 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftleft.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftleft.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftleft.sv|
 !i113 1
 R8
 R9
@@ -305,13 +305,13 @@ R11
 !i10b 1
 !s100 PSMg[CN]_RXg=?nzo@TKC1
 R3
-IWe2m@ba<CeKkkz4P5`m751
+Id4[Hk_K0WdnCb<=e9JiGF0
 R4
 S1
 R0
-R21
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftright.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftright.sv
+w1709566334
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv
 !i122 10
 R5
 R6
@@ -319,60 +319,60 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftright.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftright.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/shiftright.sv|
 !i113 1
 R8
 R9
 R10
 vsumador
 R1
-R14
+R2
 !i10b 1
 !s100 iAI5Xl=fQ]I]H9[jB`I590
 R3
-I1W6D]fniD=;C5QBdl5N9T2
+I23I3jmN9S_7h>Uh?zSd;D3
 R4
 S1
 R0
-R16
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv
+R14
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv
 !i122 1
 R5
 R6
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv|
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador.sv|
 !i113 1
 R8
 R9
 R10
 vsumador1bit
 R1
-!s110 1709680565
+R2
 !i10b 1
 !s100 IZW1m=ig=SS1@=?SON6P>3
 R3
-IfmG5QJV1i34=dYMdYEbD[1
+Ij:SdHe=i:Z6i7KX2dL0R93
 R4
 S1
 R0
-w1709091594
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv
+w1709678977
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv
 !i122 0
 L0 1 4
 R6
 r1
 !s85 0
 31
-!s108 1709680565.000000
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv|
+R7
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/sumador1bit.sv|
 !i113 1
 R8
 R9
@@ -383,13 +383,13 @@ R2
 !i10b 1
 !s100 Yl[IP2Cd>WPC>?J4:bbEK0
 R3
-I`4Re:m:FKiS>8T9McX_?R2
+IUbMEzL]G<M^haUB`HB?LF3
 R4
 S1
 R0
-R21
-8C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/xoroperator.sv
-FC:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/xoroperator.sv
+w1709564745
+8C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv
+FC:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv
 !i122 8
 R5
 R6
@@ -397,8 +397,8 @@ r1
 !s85 0
 31
 R7
-!s107 C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/xoroperator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1|C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/xoroperator.sv|
+!s107 C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1|C:/Users/andre/Desktop/TallerDigital/Lab2/repo/problem1/xoroperator.sv|
 !i113 1
 R8
 R9
