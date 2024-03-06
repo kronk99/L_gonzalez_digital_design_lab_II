@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Calculadora
-Tue Mar  5 17:15:20 2024
+Analysis & Synthesis report for Calculadora
+Wed Mar  6 08:32:02 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -7,56 +7,67 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |Calculator
-  5. Parameter Settings for User Entity Instance: sumador:mysumador
-  6. Parameter Settings for User Entity Instance: restador:myrestador
-  7. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter
-  8. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst
-  9. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst
- 10. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst
- 11. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst
- 12. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|sumador:misumador
- 13. Parameter Settings for User Entity Instance: restador:myrestador|sumador:sumador1
- 14. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2
- 15. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst
- 16. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst
- 17. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst
- 18. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst
- 19. Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|sumador:misumador
- 20. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador
- 21. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador
- 22. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[0].misumador
- 23. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador
- 24. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[1].misumador
- 25. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador
- 26. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[2].misumador
- 27. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador
- 28. Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[3].misumador
- 29. Parameter Settings for User Entity Instance: Divisor:mydivisor
- 30. Parameter Settings for User Entity Instance: andoperation:myand
- 31. Parameter Settings for User Entity Instance: oroperator:myor
- 32. Parameter Settings for User Entity Instance: xoroperator:myxor
- 33. Parameter Settings for User Entity Instance: shiftleft:myshiftl
- 34. Parameter Settings for User Entity Instance: shiftright:myshiftr
- 35. Analysis & Elaboration Settings
- 36. Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[3].misumador"
- 37. Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[2].misumador"
- 38. Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[1].misumador"
- 39. Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[0].misumador"
- 40. Port Connectivity Checks: "multiplicador:mymultiplicador"
- 41. Port Connectivity Checks: "restador:myrestador|inversor:inverter2"
- 42. Port Connectivity Checks: "restador:myrestador|sumador:sumador1"
- 43. Port Connectivity Checks: "restador:myrestador|inversor:inverter|sumador:misumador"
- 44. Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst"
- 45. Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst"
- 46. Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst"
- 47. Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst"
- 48. Port Connectivity Checks: "restador:myrestador|inversor:inverter"
- 49. Port Connectivity Checks: "restador:myrestador"
- 50. Port Connectivity Checks: "sumador:mysumador"
- 51. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Calculator_con_altera
+ 11. Parameter Settings for User Entity Instance: Registrovariable:registro
+ 12. Parameter Settings for User Entity Instance: Calculator:mycalculator
+ 13. Parameter Settings for User Entity Instance: Calculator:mycalculator|sumador:mysumador
+ 14. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador
+ 15. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter
+ 16. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst
+ 17. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst
+ 18. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst
+ 19. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst
+ 20. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador
+ 21. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|sumador:sumador1
+ 22. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2
+ 23. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst
+ 24. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst
+ 25. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst
+ 26. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst
+ 27. Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador
+ 28. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador
+ 29. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador
+ 30. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador
+ 31. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador
+ 32. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador
+ 33. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador
+ 34. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador
+ 35. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador
+ 36. Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador
+ 37. Parameter Settings for User Entity Instance: Calculator:mycalculator|Divisor:mydivisor
+ 38. Parameter Settings for User Entity Instance: Calculator:mycalculator|andoperation:myand
+ 39. Parameter Settings for User Entity Instance: Calculator:mycalculator|oroperator:myor
+ 40. Parameter Settings for User Entity Instance: Calculator:mycalculator|xoroperator:myxor
+ 41. Parameter Settings for User Entity Instance: Calculator:mycalculator|shiftleft:myshiftl
+ 42. Parameter Settings for User Entity Instance: Calculator:mycalculator|shiftright:myshiftr
+ 43. Parameter Settings for User Entity Instance: Registrovariable2:registro2
+ 44. Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador"
+ 45. Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador"
+ 46. Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador"
+ 47. Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador"
+ 48. Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador"
+ 49. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter2"
+ 50. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|sumador:sumador1"
+ 51. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador"
+ 52. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst"
+ 53. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst"
+ 54. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst"
+ 55. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst"
+ 56. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter"
+ 57. Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador"
+ 58. Port Connectivity Checks: "Calculator:mycalculator|sumador:mysumador"
+ 59. Port Connectivity Checks: "Registrovariable:registro"
+ 60. Post-Synthesis Netlist Statistics for Top Partition
+ 61. Elapsed Time Per Partition
+ 62. Analysis & Synthesis Messages
 
 
 
@@ -80,22 +91,114 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Mar  5 17:15:20 2024          ;
-; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                 ; Calculadora                                    ;
-; Top-level Entity Name         ; Calculator                                     ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Mar  6 08:32:02 2024          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; Calculadora                                    ;
+; Top-level Entity Name           ; Calculator_con_altera                          ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 8                                              ;
+; Total pins                      ; 22                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
+; Option                                                                          ; Setting               ; Default Value      ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6          ;                    ;
+; Top-level entity name                                                           ; Calculator_con_altera ; Calculadora        ;
+; Family name                                                                     ; Cyclone V             ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                   ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                    ; On                 ;
+; Enable compact report table                                                     ; Off                   ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                  ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                   ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                   ; Off                ;
+; Preserve fewer node names                                                       ; On                    ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable                ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001          ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993             ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto                  ; Auto               ;
+; Safe State Machine                                                              ; Off                   ; Off                ;
+; Extract Verilog State Machines                                                  ; On                    ; On                 ;
+; Extract VHDL State Machines                                                     ; On                    ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                   ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                  ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                   ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                    ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                    ; On                 ;
+; Parallel Synthesis                                                              ; On                    ; On                 ;
+; DSP Block Balancing                                                             ; Auto                  ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                    ; On                 ;
+; Power-Up Don't Care                                                             ; On                    ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                   ; Off                ;
+; Remove Duplicate Registers                                                      ; On                    ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                   ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                   ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                   ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                   ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                   ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                    ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                   ; Off                ;
+; Optimization Technique                                                          ; Balanced              ; Balanced           ;
+; Carry Chain Length                                                              ; 70                    ; 70                 ;
+; Auto Carry Chains                                                               ; On                    ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                    ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                   ; Off                ;
+; Auto ROM Replacement                                                            ; On                    ; On                 ;
+; Auto RAM Replacement                                                            ; On                    ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                    ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                  ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                  ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                    ; On                 ;
+; Strict RAM Replacement                                                          ; Off                   ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                    ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                   ; Off                ;
+; Auto Resource Sharing                                                           ; Off                   ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                   ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                   ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                   ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                    ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                   ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                    ; On                 ;
+; Report Parameter Settings                                                       ; On                    ; On                 ;
+; Report Source Assignments                                                       ; On                    ; On                 ;
+; Report Connectivity Checks                                                      ; On                    ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                   ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                     ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation    ; Normal compilation ;
+; HDL message level                                                               ; Level2                ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                   ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                  ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                  ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                   ; 100                ;
+; Clock MUX Protection                                                            ; On                    ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                   ; Off                ;
+; Block Design Naming                                                             ; Auto                  ; Auto               ;
+; SDC constraint protection                                                       ; Off                   ; Off                ;
+; Synthesis Effort                                                                ; Auto                  ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                    ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                   ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium                ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                  ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                    ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                    ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                   ; Off                ;
++---------------------------------------------------------------------------------+-----------------------+--------------------+
 
 
 +------------------------------------------+
@@ -107,416 +210,448 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Calculator ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 4     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; sumador1bit.sv                   ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador1bit.sv           ;         ;
+; sumador.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv               ;         ;
+; Divisor.sv                       ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv               ;         ;
+; inversor.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv              ;         ;
+; restador.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv              ;         ;
+; multiplicador.sv                 ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv         ;         ;
+; andoperation.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/andoperation.sv          ;         ;
+; oroperator.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/oroperator.sv            ;         ;
+; xoroperator.sv                   ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/xoroperator.sv           ;         ;
+; shiftleft.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftleft.sv             ;         ;
+; shiftright.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/shiftright.sv            ;         ;
+; Calculator.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv            ;         ;
+; Registrovariable.sv              ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv      ;         ;
+; Calculator_con_altera.sv         ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv ;         ;
+; Registrovariable2.sv             ; yes             ; User SystemVerilog HDL File        ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable2.sv     ;         ;
+; multiplicador_1bit.sv            ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv    ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 4         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 0         ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 0         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 8         ;
+;                                             ;           ;
+; I/O pins                                    ; 22        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 8         ;
+; Total fan-out                               ; 50        ;
+; Average fan-out                             ; 0.96      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name           ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------------+--------------+
+; |Calculator_con_altera           ; 0 (0)               ; 8 (0)                     ; 0                 ; 0          ; 22   ; 0            ; |Calculator_con_altera                             ; Calculator_con_altera ; work         ;
+;    |Registrovariable2:registro2| ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Calculator_con_altera|Registrovariable2:registro2 ; Registrovariable2     ; work         ;
+;    |Registrovariable:registro|   ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Calculator_con_altera|Registrovariable:registro   ; Registrovariable      ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++---------------------------------------------+----------------------------------------+
+; Register name                               ; Reason for Removal                     ;
++---------------------------------------------+----------------------------------------+
+; Registrovariable2:registro2|regresult[4..7] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4       ;                                        ;
++---------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Calculator_con_altera ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumador:mysumador ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; BITS           ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Registrovariable:registro ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; N              ; 4     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; BITS           ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|sumador:mysumador ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|sumador:sumador1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst ;
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2 ;
 +----------------+-------+------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                               ;
 +----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                     ;
+; N              ; 4     ; Signed Integer                                                                     ;
 +----------------+-------+------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter|sumador:misumador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; BITS           ; 4     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|sumador:sumador1 ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; BITS           ; 4     ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; BITS           ; 4     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2 ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; BIT            ; 4     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; SHIFT          ; 0     ; Signed Integer                                                                                                       ;
+; TAMANO         ; 4     ; Signed Integer                                                                                                       ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; BITS           ; 7     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; SHIFT          ; 1     ; Signed Integer                                                                                                       ;
+; TAMANO         ; 4     ; Signed Integer                                                                                                       ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; BITS           ; 7     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:myrestador|inversor:inverter2|sumador:misumador ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; BITS           ; 4     ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; SHIFT          ; 2     ; Signed Integer                                                                                                       ;
+; TAMANO         ; 4     ; Signed Integer                                                                                                       ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; BIT            ; 4     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; BITS           ; 7     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; SHIFT          ; 0     ; Signed Integer                                                                               ;
-; TAMANO         ; 4     ; Signed Integer                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
+; SHIFT          ; 3     ; Signed Integer                                                                                                       ;
+; TAMANO         ; 4     ; Signed Integer                                                                                                       ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[0].misumador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; BITS           ; 7     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; BITS           ; 7     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; SHIFT          ; 1     ; Signed Integer                                                                               ;
-; TAMANO         ; 4     ; Signed Integer                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|Divisor:mydivisor ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; Nbits          ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[1].misumador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; BITS           ; 7     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|andoperation:myand ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; SHIFT          ; 2     ; Signed Integer                                                                               ;
-; TAMANO         ; 4     ; Signed Integer                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|oroperator:myor ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[2].misumador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; BITS           ; 7     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|xoroperator:myxor ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; SHIFT          ; 3     ; Signed Integer                                                                               ;
-; TAMANO         ; 4     ; Signed Integer                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|shiftleft:myshiftl ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mymultiplicador|sumador:loop[3].misumador ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; BITS           ; 7     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Calculator:mycalculator|shiftright:myshiftr ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Divisor:mydivisor ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; Nbits          ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Registrovariable2:registro2 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: andoperation:myand ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 4     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oroperator:myor ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; N              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: xoroperator:myxor ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; N              ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shiftleft:myshiftl ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 4     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shiftright:myshiftr ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; Calculator         ; Calculadora        ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[3].misumador"                                                                                    ;
+; Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador"                                                            ;
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                     ;
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -526,7 +661,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[2].misumador"                                                                                   ;
+; Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador"                                                           ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -535,7 +670,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[1].misumador"                                                                                   ;
+; Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador"                                                           ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -544,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:mymultiplicador|sumador:loop[0].misumador"                                                                                   ;
+; Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador"                                                           ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                     ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -555,7 +690,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplicador:mymultiplicador"                                                       ;
+; Port Connectivity Checks: "Calculator:mycalculator|multiplicador:mymultiplicador"                               ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -564,7 +699,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter2"                                                                                ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter2"                                                        ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
@@ -573,7 +708,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|sumador:sumador1"                                                                                                                                                  ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|sumador:sumador1"                                                                                                                          ;
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -583,7 +718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter|sumador:misumador"                                                                                                                                 ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador"                                                                                                         ;
 +------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -596,7 +731,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst"                                                                           ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst"                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -608,7 +743,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst"                                                                           ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst"                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -620,7 +755,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst"                                                                           ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst"                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -632,7 +767,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst"                                                                           ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst"                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -644,7 +779,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador|inversor:inverter"                                                                                 ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador|inversor:inverter"                                                         ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                                ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
@@ -653,7 +788,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador:myrestador"                                                                                         ;
+; Port Connectivity Checks: "Calculator:mycalculator|restador:myrestador"                                                                 ;
 +----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                                                  ;
 +----------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -662,7 +797,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador:mysumador"                                                                                                                                                                      ;
+; Port Connectivity Checks: "Calculator:mycalculator|sumador:mysumador"                                                                                                                                              ;
 +-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -672,14 +807,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Registrovariable:registro"                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Roperand1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 8                           ;
+;     CLR               ; 8                           ;
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 22                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Tue Mar  5 17:15:03 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora --analysis_and_elaboration
+    Info: Processing started: Wed Mar  6 08:31:22 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sumador1bit.sv
@@ -727,29 +897,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file calcula
     Info (12023): Found entity 1: Calculator File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file calculator_tb.sv
     Info (12023): Found entity 1: Calculator_tb File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_tb.sv Line: 3
-Info (12127): Elaborating entity "Calculator" for the top level hierarchy
-Info (12128): Elaborating entity "sumador" for hierarchy "sumador:mysumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file registrovariable.sv
+    Info (12023): Found entity 1: Registrovariable File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file calculator_con_altera.sv
+    Info (12023): Found entity 1: Calculator_con_altera File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrovariable2.sv
+    Info (12023): Found entity 1: Registrovariable2 File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable2.sv Line: 1
+Info (12127): Elaborating entity "Calculator_con_altera" for the top level hierarchy
+Info (12128): Elaborating entity "Registrovariable" for hierarchy "Registrovariable:registro" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 29
+Warning (10240): Verilog HDL Always Construct warning at Registrovariable.sv(7): inferring latch(es) for variable "Rselector", which holds its previous value in one or more paths through the always construct File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 7
+Info (10041): Inferred latch for "Rselector[0]" at Registrovariable.sv(7) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 7
+Info (10041): Inferred latch for "Rselector[1]" at Registrovariable.sv(7) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 7
+Info (10041): Inferred latch for "Rselector[2]" at Registrovariable.sv(7) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 7
+Info (10041): Inferred latch for "Rselector[3]" at Registrovariable.sv(7) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Registrovariable.sv Line: 7
+Info (12128): Elaborating entity "Calculator" for hierarchy "Calculator:mycalculator" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 36
+Info (12128): Elaborating entity "sumador" for hierarchy "Calculator:mycalculator|sumador:mysumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at sumador.sv(6): truncated value with size 4 to match size of target (1) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv Line: 6
-Info (12128): Elaborating entity "sumador1bit" for hierarchy "sumador:mysumador|sumador1bit:forloop[0].misumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv Line: 10
-Info (12128): Elaborating entity "restador" for hierarchy "restador:myrestador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 26
-Info (12128): Elaborating entity "inversor" for hierarchy "restador:myrestador|inversor:inverter" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 11
-Info (12128): Elaborating entity "nand_d" for hierarchy "restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
-Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:mymultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 27
+Info (12128): Elaborating entity "sumador1bit" for hierarchy "Calculator:mycalculator|sumador:mysumador|sumador1bit:forloop[0].misumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv Line: 10
+Info (12128): Elaborating entity "restador" for hierarchy "Calculator:mycalculator|restador:myrestador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 26
+Info (12128): Elaborating entity "inversor" for hierarchy "Calculator:mycalculator|restador:myrestador|inversor:inverter" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/restador.sv Line: 11
+Info (12128): Elaborating entity "nand_d" for hierarchy "Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
+Info (12128): Elaborating entity "multiplicador" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 27
 Warning (12125): Using design file multiplicador_1bit.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Multiplicador_1bit File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador_1bit.sv Line: 1
-Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
-Info (12128): Elaborating entity "sumador" for hierarchy "multiplicador:mymultiplicador|sumador:loop[0].misumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 30
+Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
+Info (12128): Elaborating entity "sumador" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 30
 Warning (10230): Verilog HDL assignment warning at sumador.sv(6): truncated value with size 7 to match size of target (1) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/sumador.sv Line: 6
-Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
-Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
-Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
-Info (12128): Elaborating entity "Divisor" for hierarchy "Divisor:mydivisor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 28
+Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
+Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
+Info (12128): Elaborating entity "Multiplicador_1bit" for hierarchy "Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/multiplicador.sv Line: 22
+Info (12128): Elaborating entity "Divisor" for hierarchy "Calculator:mycalculator|Divisor:mydivisor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 28
 Warning (10230): Verilog HDL assignment warning at Divisor.sv(24): truncated value with size 32 to match size of target (4) File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Divisor.sv Line: 24
-Info (12128): Elaborating entity "andoperation" for hierarchy "andoperation:myand" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 30
-Info (12128): Elaborating entity "oroperator" for hierarchy "oroperator:myor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 31
-Info (12128): Elaborating entity "xoroperator" for hierarchy "xoroperator:myxor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 32
-Info (12128): Elaborating entity "shiftleft" for hierarchy "shiftleft:myshiftl" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 33
-Info (12128): Elaborating entity "shiftright" for hierarchy "shiftright:myshiftr" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 34
+Info (12128): Elaborating entity "andoperation" for hierarchy "Calculator:mycalculator|andoperation:myand" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 30
+Info (12128): Elaborating entity "oroperator" for hierarchy "Calculator:mycalculator|oroperator:myor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 31
+Info (12128): Elaborating entity "xoroperator" for hierarchy "Calculator:mycalculator|xoroperator:myxor" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 32
+Info (12128): Elaborating entity "shiftleft" for hierarchy "Calculator:mycalculator|shiftleft:myshiftl" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 33
+Info (12128): Elaborating entity "shiftright" for hierarchy "Calculator:mycalculator|shiftright:myshiftr" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator.sv Line: 34
+Info (12128): Elaborating entity "Registrovariable2" for hierarchy "Registrovariable2:registro2" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 43
 Warning (12020): Port "Cin" on the entity instantiation of "misumador" is connected to a signal of width 32. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 31
 Warning (12010): Port "a" on the entity instantiation of "loop[3].nand_inst" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be driven by GND. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
 Warning (12010): Port "b" on the entity instantiation of "loop[3].nand_inst" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be driven by GND. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
@@ -763,11 +947,37 @@ Warning (12030): Port "y" on the entity instantiation of "loop[1].nand_inst" is 
 Warning (12010): Port "a" on the entity instantiation of "loop[0].nand_inst" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be driven by GND. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
 Warning (12010): Port "b" on the entity instantiation of "loop[0].nand_inst" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be driven by GND. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
 Warning (12030): Port "y" on the entity instantiation of "loop[0].nand_inst" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/inversor.sv Line: 25
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "reg_input_select[3]" is missing source, defaulting to GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 15
+    Warning (12110): Net "reg_input_select[2]" is missing source, defaulting to GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 15
+    Warning (12110): Net "reg_input_select[1]" is missing source, defaulting to GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 15
+    Warning (12110): Net "reg_input_select[0]" is missing source, defaulting to GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 15
 Warning (12241): 14 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Tue Mar  5 17:15:20 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:36
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "resultadito[4]" is stuck at GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 8
+    Warning (13410): Pin "resultadito[5]" is stuck at GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 8
+    Warning (13410): Pin "resultadito[6]" is stuck at GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 8
+    Warning (13410): Pin "resultadito[7]" is stuck at GND File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "op_select[0]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 4
+    Warning (15610): No output dependent on input pin "op_select[1]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 4
+    Warning (15610): No output dependent on input pin "op_select[2]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 4
+    Warning (15610): No output dependent on input pin "op_select[3]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 4
+    Warning (15610): No output dependent on input pin "operandou[0]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 5
+    Warning (15610): No output dependent on input pin "operandou[1]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 5
+    Warning (15610): No output dependent on input pin "operandou[2]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 5
+    Warning (15610): No output dependent on input pin "operandou[3]" File: C:/Users/Luis/Desktop/Problema2gitlab/L_gonzalez_digital_design_lab_II/problem1/Calculator_con_altera.sv Line: 5
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Wed Mar  6 08:32:03 2024
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:50
 
 

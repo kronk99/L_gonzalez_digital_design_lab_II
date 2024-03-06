@@ -1,5 +1,5 @@
 Flow report for Calculadora
-Tue Mar  5 17:15:20 2024
+Wed Mar  6 08:35:00 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------+
-; Flow Summary                                                                 ;
-+-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Tue Mar  5 17:15:20 2024          ;
-; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name               ; Calculadora                                    ;
-; Top-level Entity Name       ; Calculator                                     ;
-; Family                      ; Cyclone V                                      ;
-; Device                      ; 5CSEMA5F31C6                                   ;
-; Timing Models               ; Final                                          ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
-; Total registers             ; N/A until Partition Merge                      ;
-; Total pins                  ; N/A until Partition Merge                      ;
-; Total virtual pins          ; N/A until Partition Merge                      ;
-; Total block memory bits     ; N/A until Partition Merge                      ;
-; Total PLLs                  ; N/A until Partition Merge                      ;
-; Total DLLs                  ; N/A until Partition Merge                      ;
-+-----------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++---------------------------------+------------------------------------------------+
+; Flow Status                     ; Successful - Wed Mar  6 08:35:00 2024          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; Calculadora                                    ;
+; Top-level Entity Name           ; Calculator_con_altera                          ;
+; Family                          ; Cyclone V                                      ;
+; Device                          ; 5CSEMA5F31C6                                   ;
+; Timing Models                   ; Final                                          ;
+; Logic utilization (in ALMs)     ; 3 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 8                                              ;
+; Total pins                      ; 22 / 457 ( 5 % )                               ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
++---------------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,98 +68,114 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/05/2024 17:15:04 ;
+; Start date & time ; 03/06/2024 08:31:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Calculadora         ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                               ;
-+--------------------------------------+----------------------------------------+---------------+-------------+------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id       ;
-+--------------------------------------+----------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 53671020195469.170968050406304         ; --            ; --          ; --               ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; multiplicador_tb ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; xoroperator_tb   ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; andoperation_tb  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shiftright_tb    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; restador_tb      ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shiftleft_tb     ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Divisor_tb       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Calculator_tb    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; oroperator_tb    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench        ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Calculator_tb                          ; --            ; --          ; eda_simulation   ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation   ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --          ; --               ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_FILE                  ; multiplicador_tb.sv                    ; --            ; --          ; multiplicador_tb ;
-; EDA_TEST_BENCH_FILE                  ; xoroperator_tb.sv                      ; --            ; --          ; xoroperator_tb   ;
-; EDA_TEST_BENCH_FILE                  ; andoperation_tb.sv                     ; --            ; --          ; andoperation_tb  ;
-; EDA_TEST_BENCH_FILE                  ; shiftright_tb.sv                       ; --            ; --          ; shiftright_tb    ;
-; EDA_TEST_BENCH_FILE                  ; restador_tb.sv                         ; --            ; --          ; restador_tb      ;
-; EDA_TEST_BENCH_FILE                  ; shiftleft_tb.sv                        ; --            ; --          ; shiftleft_tb     ;
-; EDA_TEST_BENCH_FILE                  ; Divisor_tb.sv                          ; --            ; --          ; Divisor_tb       ;
-; EDA_TEST_BENCH_FILE                  ; Calculator_tb.sv                       ; --            ; --          ; Calculator_tb    ;
-; EDA_TEST_BENCH_FILE                  ; oroperator_tb.sv                       ; --            ; --          ; oroperator_tb    ;
-; EDA_TEST_BENCH_FILE                  ; testbench.sv                           ; --            ; --          ; testbench        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; multiplicador_tb                       ; --            ; --          ; multiplicador_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; xoroperator_tb                         ; --            ; --          ; xoroperator_tb   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; andoperation_tb                        ; --            ; --          ; andoperation_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; shiftright_tb                          ; --            ; --          ; shiftright_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; restador_tb                            ; --            ; --          ; restador_tb      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; shiftleft_tb                           ; --            ; --          ; shiftleft_tb     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Divisor_tb                             ; --            ; --          ; Divisor_tb       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; Calculator_tb                          ; --            ; --          ; Calculator_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; oroperator_tb                          ; --            ; --          ; oroperator_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --          ; testbench        ;
-; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; Divisor_tb                             ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; multiplicador_tb                       ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; andoperation_tb                        ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; oroperator_tb                          ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; xoroperator_tb                         ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; shiftleft_tb                           ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; shiftright_tb                          ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; Calculator_tb                          ; --            ; --          ; eda_simulation   ;
-; EDA_TEST_BENCH_NAME                  ; restador_tb                            ; --            ; --          ; eda_simulation   ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation   ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --               ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --               ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Calculator  ; Top              ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Calculator  ; Top              ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Calculator  ; Top              ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --               ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --               ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --               ;
-; TOP_LEVEL_ENTITY                     ; Calculator                             ; Calculadora   ; --          ; --               ;
-+--------------------------------------+----------------------------------------+---------------+-------------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                          ;
++--------------------------------------+----------------------------------------+---------------+-----------------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name           ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-----------------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 53671020195469.170973548307128         ; --            ; --                    ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; multiplicador_tb                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; xoroperator_tb                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; andoperation_tb                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; shiftright_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; restador_tb                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; shiftleft_tb                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Divisor_tb                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Calculator_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; oroperator_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; testbench                         ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --                    ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --                    ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; QuestaSim (Verilog)                    ; <None>        ; --                    ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                               ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; multiplicador_tb.sv                    ; --            ; --                    ; multiplicador_tb                  ;
+; EDA_TEST_BENCH_FILE                  ; xoroperator_tb.sv                      ; --            ; --                    ; xoroperator_tb                    ;
+; EDA_TEST_BENCH_FILE                  ; andoperation_tb.sv                     ; --            ; --                    ; andoperation_tb                   ;
+; EDA_TEST_BENCH_FILE                  ; shiftright_tb.sv                       ; --            ; --                    ; shiftright_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; restador_tb.sv                         ; --            ; --                    ; restador_tb                       ;
+; EDA_TEST_BENCH_FILE                  ; shiftleft_tb.sv                        ; --            ; --                    ; shiftleft_tb                      ;
+; EDA_TEST_BENCH_FILE                  ; Divisor_tb.sv                          ; --            ; --                    ; Divisor_tb                        ;
+; EDA_TEST_BENCH_FILE                  ; Calculator_tb.sv                       ; --            ; --                    ; Calculator_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; oroperator_tb.sv                       ; --            ; --                    ; oroperator_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; testbench.sv                           ; --            ; --                    ; testbench                         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; multiplicador_tb                       ; --            ; --                    ; multiplicador_tb                  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; xoroperator_tb                         ; --            ; --                    ; xoroperator_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; andoperation_tb                        ; --            ; --                    ; andoperation_tb                   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shiftright_tb                          ; --            ; --                    ; shiftright_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; restador_tb                            ; --            ; --                    ; restador_tb                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shiftleft_tb                           ; --            ; --                    ; shiftleft_tb                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Divisor_tb                             ; --            ; --                    ; Divisor_tb                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Calculator_tb                          ; --            ; --                    ; Calculator_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; oroperator_tb                          ; --            ; --                    ; oroperator_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --                    ; testbench                         ;
+; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; Divisor_tb                             ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; multiplicador_tb                       ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; andoperation_tb                        ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; oroperator_tb                          ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; xoroperator_tb                         ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; shiftleft_tb                           ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; shiftright_tb                          ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; Calculator_tb                          ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; restador_tb                            ; --            ; --                    ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                    ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                    ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                    ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Calculator_con_altera ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Calculator_con_altera ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Calculator_con_altera ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --                    ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                    ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --                    ; --                                ;
+; TOP_LEVEL_ENTITY                     ; Calculator_con_altera                  ; Calculadora   ; --                    ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-----------------------+-----------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:17     ; 1.0                     ; 4777 MB             ; 00:00:36                           ;
-; Total                  ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:34     ; 1.0                     ; 4857 MB             ; 00:00:49                           ;
+; Fitter               ; 00:02:20     ; 1.0                     ; 6477 MB             ; 00:01:52                           ;
+; Assembler            ; 00:00:11     ; 1.0                     ; 4877 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:10     ; 1.0                     ; 5131 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4725 MB             ; 00:00:02                           ;
+; Total                ; 00:03:19     ; --                      ; --                  ; 00:03:03                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-99J4F6J  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off Calculadora -c Calculadora
+quartus_fit --read_settings_files=off --write_settings_files=off Calculadora -c Calculadora
+quartus_asm --read_settings_files=off --write_settings_files=off Calculadora -c Calculadora
+quartus_sta Calculadora -c Calculadora
+quartus_eda --read_settings_files=off --write_settings_files=off Calculadora -c Calculadora
 
 
 

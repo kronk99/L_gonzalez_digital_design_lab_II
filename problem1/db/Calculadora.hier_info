@@ -1,4 +1,72 @@
-|Calculator
+|Calculator_con_altera
+clk => clk.IN2
+reset => reset.IN2
+op_select[0] => op_select[0].IN1
+op_select[1] => op_select[1].IN1
+op_select[2] => op_select[2].IN1
+op_select[3] => op_select[3].IN1
+operandou[0] => operandou[0].IN1
+operandou[1] => operandou[1].IN1
+operandou[2] => operandou[2].IN1
+operandou[3] => operandou[3].IN1
+operandou2[0] => operandou2[0].IN1
+operandou2[1] => operandou2[1].IN1
+operandou2[2] => operandou2[2].IN1
+operandou2[3] => operandou2[3].IN1
+resultadito[0] <= Registrovariable2:registro2.regresult
+resultadito[1] <= Registrovariable2:registro2.regresult
+resultadito[2] <= Registrovariable2:registro2.regresult
+resultadito[3] <= Registrovariable2:registro2.regresult
+resultadito[4] <= Registrovariable2:registro2.regresult
+resultadito[5] <= Registrovariable2:registro2.regresult
+resultadito[6] <= Registrovariable2:registro2.regresult
+resultadito[7] <= Registrovariable2:registro2.regresult
+
+
+|Calculator_con_altera|Registrovariable:registro
+selector[0] => ~NO_FANOUT~
+selector[1] => ~NO_FANOUT~
+selector[2] => ~NO_FANOUT~
+selector[3] => ~NO_FANOUT~
+operand1[0] => Roperand1[0]~reg0.DATAIN
+operand1[1] => Roperand1[1]~reg0.DATAIN
+operand1[2] => Roperand1[2]~reg0.DATAIN
+operand1[3] => Roperand1[3]~reg0.DATAIN
+operand2[0] => Roperand2[0]~reg0.DATAIN
+operand2[1] => Roperand2[1]~reg0.DATAIN
+operand2[2] => Roperand2[2]~reg0.DATAIN
+operand2[3] => Roperand2[3]~reg0.DATAIN
+clk => Roperand2[0]~reg0.CLK
+clk => Roperand2[1]~reg0.CLK
+clk => Roperand2[2]~reg0.CLK
+clk => Roperand2[3]~reg0.CLK
+clk => Roperand1[0]~reg0.CLK
+clk => Roperand1[1]~reg0.CLK
+clk => Roperand1[2]~reg0.CLK
+clk => Roperand1[3]~reg0.CLK
+reset => Roperand2[0]~reg0.ACLR
+reset => Roperand2[1]~reg0.ACLR
+reset => Roperand2[2]~reg0.ACLR
+reset => Roperand2[3]~reg0.ACLR
+reset => Roperand1[0]~reg0.ACLR
+reset => Roperand1[1]~reg0.ACLR
+reset => Roperand1[2]~reg0.ACLR
+reset => Roperand1[3]~reg0.ACLR
+Roperand1[0] <= Roperand1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand1[1] <= Roperand1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand1[2] <= Roperand1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand1[3] <= Roperand1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand2[0] <= Roperand2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand2[1] <= Roperand2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand2[2] <= Roperand2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Roperand2[3] <= Roperand2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Rselector[0] <= <GND>
+Rselector[1] <= <GND>
+Rselector[2] <= <GND>
+Rselector[3] <= <GND>
+
+
+|Calculator_con_altera|Calculator:mycalculator
 op_select[0] => Decoder0.IN3
 op_select[0] => Mux0.IN16
 op_select[0] => Mux1.IN3
@@ -41,7 +109,7 @@ resultado[6] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
 resultado[7] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|sumador:mysumador
+|Calculator_con_altera|Calculator:mycalculator|sumador:mysumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -61,7 +129,7 @@ Resul[2] <= sumador1bit:forloop[2].misumador.s
 Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
-|Calculator|sumador:mysumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|sumador:mysumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -75,7 +143,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|sumador:mysumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|sumador:mysumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -89,7 +157,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|sumador:mysumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|sumador:mysumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -103,7 +171,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|sumador:mysumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|sumador:mysumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -117,7 +185,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -133,7 +201,7 @@ Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
 Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter
 in[0] => in[0].IN1
 in[1] => in[1].IN1
 in[2] => in[2].IN1
@@ -145,7 +213,7 @@ out[3] <= sumador:misumador.Resul
 out[4] <= <GND>
 
 
-|Calculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[0].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -154,7 +222,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[1].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -163,7 +231,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[2].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -172,7 +240,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|nand_d:loop[3].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -181,7 +249,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|sumador:misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -201,7 +269,7 @@ Resul[2] <= sumador1bit:forloop[2].misumador.s
 Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
-|Calculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -215,7 +283,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -229,7 +297,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -243,7 +311,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter|sumador:misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -257,7 +325,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|sumador:sumador1
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|sumador:sumador1
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -277,7 +345,7 @@ Resul[2] <= sumador1bit:forloop[2].misumador.s
 Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
-|Calculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -291,7 +359,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -305,7 +373,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -319,7 +387,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|sumador:sumador1|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -333,7 +401,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2
 in[0] => in[0].IN1
 in[1] => in[1].IN1
 in[2] => in[2].IN1
@@ -345,7 +413,7 @@ out[3] <= sumador:misumador.Resul
 out[4] <= <GND>
 
 
-|Calculator|restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[0].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -354,7 +422,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[1].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -363,7 +431,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[2].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -372,7 +440,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|nand_d:loop[3].nand_inst
 a[0] => y.IN0
 a[1] => y.IN0
 b[0] => y.IN1
@@ -381,7 +449,7 @@ y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|sumador:misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -401,7 +469,7 @@ Resul[2] <= sumador1bit:forloop[2].misumador.s
 Resul[3] <= sumador1bit:forloop[3].misumador.s
 
 
-|Calculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -415,7 +483,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -429,7 +497,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -443,7 +511,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|restador:myrestador|inversor:inverter2|sumador:misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -457,7 +525,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador
 num1[0] => num1[0].IN4
 num1[1] => num1[1].IN4
 num1[2] => num1[2].IN4
@@ -477,7 +545,7 @@ Result[7] <= <GND>
 OFLOW <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[0].mimultiplicador
 Bit => Result.IN0
 Bit => Result.IN0
 Bit => Result.IN0
@@ -495,7 +563,7 @@ Result[5] <= <GND>
 Result[6] <= <GND>
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -527,7 +595,7 @@ Resul[5] <= sumador1bit:forloop[5].misumador.s
 Resul[6] <= sumador1bit:forloop[6].misumador.s
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -541,7 +609,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -555,7 +623,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -569,7 +637,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -583,7 +651,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[4].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[4].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -597,7 +665,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[5].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[5].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -611,7 +679,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[6].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[0].misumador|sumador1bit:forloop[6].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -625,7 +693,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[1].mimultiplicador
 Bit => Result.IN0
 Bit => Result.IN0
 Bit => Result.IN0
@@ -643,7 +711,7 @@ Result[5] <= <GND>
 Result[6] <= <GND>
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -675,7 +743,7 @@ Resul[5] <= sumador1bit:forloop[5].misumador.s
 Resul[6] <= sumador1bit:forloop[6].misumador.s
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -689,7 +757,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -703,7 +771,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -717,7 +785,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -731,7 +799,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[4].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[4].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -745,7 +813,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[5].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[5].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -759,7 +827,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[6].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[1].misumador|sumador1bit:forloop[6].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -773,7 +841,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[2].mimultiplicador
 Bit => Result.IN0
 Bit => Result.IN0
 Bit => Result.IN0
@@ -791,7 +859,7 @@ Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
 Result[6] <= <GND>
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -823,7 +891,7 @@ Resul[5] <= sumador1bit:forloop[5].misumador.s
 Resul[6] <= sumador1bit:forloop[6].misumador.s
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -837,7 +905,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -851,7 +919,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -865,7 +933,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -879,7 +947,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[4].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[4].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -893,7 +961,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[5].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[5].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -907,7 +975,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[6].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[2].misumador|sumador1bit:forloop[6].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -921,7 +989,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|Multiplicador_1bit:loop[3].mimultiplicador
 Bit => Result.IN0
 Bit => Result.IN0
 Bit => Result.IN0
@@ -939,7 +1007,7 @@ Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
 Result[6] <= Result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador
 num1[0] => num1[0].IN1
 num1[1] => num1[1].IN1
 num1[2] => num1[2].IN1
@@ -971,7 +1039,7 @@ Resul[5] <= sumador1bit:forloop[5].misumador.s
 Resul[6] <= sumador1bit:forloop[6].misumador.s
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[0].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[0].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -985,7 +1053,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[1].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[1].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -999,7 +1067,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[2].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[2].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -1013,7 +1081,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[3].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[3].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -1027,7 +1095,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[4].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[4].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -1041,7 +1109,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[5].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[5].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -1055,7 +1123,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[6].misumador
+|Calculator_con_altera|Calculator:mycalculator|multiplicador:mymultiplicador|sumador:loop[3].misumador|sumador1bit:forloop[6].misumador
 a => Cout.IN0
 a => Cout.IN0
 a => s.IN0
@@ -1069,7 +1137,7 @@ Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|Divisor:mydivisor
+|Calculator_con_altera|Calculator:mycalculator|Divisor:mydivisor
 dividend[0] => LessThan0.IN4
 dividend[0] => Add0.IN8
 dividend[0] => temp_dividend.DATAA
@@ -1220,7 +1288,7 @@ remainder[2] <= temp_dividend.DB_MAX_OUTPUT_PORT_TYPE
 remainder[3] <= temp_dividend.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|andoperation:myand
+|Calculator_con_altera|Calculator:mycalculator|andoperation:myand
 a[0] => temp_result.IN0
 a[1] => temp_result.IN0
 a[2] => temp_result.IN0
@@ -1235,7 +1303,7 @@ result[2] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|oroperator:myor
+|Calculator_con_altera|Calculator:mycalculator|oroperator:myor
 a[0] => temp_result.IN0
 a[1] => temp_result.IN0
 a[2] => temp_result.IN0
@@ -1250,7 +1318,7 @@ result[2] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|xoroperator:myxor
+|Calculator_con_altera|Calculator:mycalculator|xoroperator:myxor
 a[0] => temp_result.IN0
 a[1] => temp_result.IN0
 a[2] => temp_result.IN0
@@ -1265,7 +1333,7 @@ result[2] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= temp_result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|shiftleft:myshiftl
+|Calculator_con_altera|Calculator:mycalculator|shiftleft:myshiftl
 a[0] => result[1].DATAIN
 a[1] => result[2].DATAIN
 a[2] => result[3].DATAIN
@@ -1281,7 +1349,7 @@ result[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
 result[4] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Calculator|shiftright:myshiftr
+|Calculator_con_altera|Calculator:mycalculator|shiftright:myshiftr
 a[0] => ~NO_FANOUT~
 a[1] => result[0].DATAIN
 a[2] => result[1].DATAIN
@@ -1294,5 +1362,40 @@ result[0] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= <GND>
+
+
+|Calculator_con_altera|Registrovariable2:registro2
+result[0] => regresult[0]~reg0.DATAIN
+result[1] => regresult[1]~reg0.DATAIN
+result[2] => regresult[2]~reg0.DATAIN
+result[3] => regresult[3]~reg0.DATAIN
+result[4] => regresult[4]~reg0.DATAIN
+result[5] => regresult[5]~reg0.DATAIN
+result[6] => regresult[6]~reg0.DATAIN
+result[7] => regresult[7]~reg0.DATAIN
+clk => regresult[0]~reg0.CLK
+clk => regresult[1]~reg0.CLK
+clk => regresult[2]~reg0.CLK
+clk => regresult[3]~reg0.CLK
+clk => regresult[4]~reg0.CLK
+clk => regresult[5]~reg0.CLK
+clk => regresult[6]~reg0.CLK
+clk => regresult[7]~reg0.CLK
+rst => regresult[0]~reg0.ACLR
+rst => regresult[1]~reg0.ACLR
+rst => regresult[2]~reg0.ACLR
+rst => regresult[3]~reg0.ACLR
+rst => regresult[4]~reg0.ACLR
+rst => regresult[5]~reg0.ACLR
+rst => regresult[6]~reg0.ACLR
+rst => regresult[7]~reg0.ACLR
+regresult[0] <= regresult[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[1] <= regresult[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[2] <= regresult[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[3] <= regresult[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[4] <= regresult[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[5] <= regresult[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[6] <= regresult[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regresult[7] <= regresult[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

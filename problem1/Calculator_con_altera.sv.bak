@@ -1,0 +1,29 @@
+module Calculator_con_altera #(parameter N = 4)(
+    input logic clk,
+    input logic reset,
+    input [3:0] op_select,
+    input [N-1:0] operand1, 
+    input [N-1:0] operand2,
+    output logic [2*N-1:0] resultado
+);
+
+    // Instancia del registro
+    VariableWidthRegister #(N) reg (
+        .clk(clk),
+        .reset(reset),
+        .in_data1(operand1),
+        .in_data2(operand2),
+        .in_op_select(op_select),
+        .out_data1(reg_out_data1),
+        .out_data2(reg_out_data2),
+        .out_op_select(reg_out_op_select)
+    );
+
+    // Resto del código de tu ALU...
+
+    // Conecta las salidas del registro a las entradas de la ALU
+    // Usando reg_out_data1, reg_out_data2 y reg_out_op_select
+
+    // ...
+
+endmodule

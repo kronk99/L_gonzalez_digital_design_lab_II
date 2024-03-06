@@ -4,7 +4,8 @@ module Calculator //Full module that uses a multiplexor
     input [3:0] op_select, //Selects the operation using 4 bits 
     input [N-1:0] operand1, 
     input [N-1:0] operand2,
-    output logic [2*N-1:0] resultado
+    output logic [2*N-1:0] resultado,
+	 output logic [] banderas
 );
 
     // Declare instances of different calculator modules
@@ -19,9 +20,9 @@ module Calculator //Full module that uses a multiplexor
 	 logic [N-1:0] res_xor;
 	 logic [N:0] res_sl;
 	 logic [N-1:0] res_sr;
-	 logic overflow;
 	 logic cout;
-	 
+	 logic [3:0] banderas;
+	 //crear un logic de X bits para guardar cada uno de las flags
 	 sumador #(N) mysumador( .num1(operand1), .num2(operand2),.Cin(0),.Cout(cout) ,.Resul(res_s)); //Addition
 	 restador #(N) myrestador(.num1(operand1), .num2(operand2), .Result(res_r)); //Substraction
 	 multiplicador #(N) mymultiplicador(.num1(operand1), .num2(operand2), .Result(res_m),.OFLOW(overflow)); //Multiplication
