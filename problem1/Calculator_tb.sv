@@ -9,12 +9,14 @@ module Calculator_tb;
   logic [Nbits-1:0] first;
   logic [Nbits-1:0] second;
   logic [2*Nbits-1:0] resu;
+  logic [3:0] flags;
 
   // Module instance 
   Calculator #(4) uut (
     .op_select(selector),
     .operand1(first),
     .operand2(second),
+	 .banderas(flags),
     .resultado(resu)
   );
 

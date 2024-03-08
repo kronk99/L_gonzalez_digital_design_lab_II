@@ -5,7 +5,7 @@ module Calculator //Full module that uses a multiplexor
     input [N-1:0] operand1, 
     input [N-1:0] operand2,
     output logic [2*N-1:0] resultado,
-	 output logic [] banderas
+	 output logic [3:0] banderas
 );
 
     // Declare instances of different calculator modules
@@ -21,19 +21,23 @@ module Calculator //Full module that uses a multiplexor
 	 logic [N:0] res_sl;
 	 logic [N-1:0] res_sr;
 	 logic cout;
-	 logic [3:0] banderas;
+	 logic negcarry;
+	 //logic [3:0] banderas;
 	 //crear un logic de X bits para guardar cada uno de las flags
-	 sumador #(N) mysumador( .num1(operand1), .num2(operand2),.Cin(0),.Cout(cout) ,.Resul(res_s)); //Addition
-	 restador #(N) myrestador(.num1(operand1), .num2(operand2), .Result(res_r)); //Substraction
-	 multiplicador #(N) mymultiplicador(.num1(operand1), .num2(operand2), .Result(res_m),.OFLOW(overflow)); //Multiplication
-	 Divisor #(N) mydivisor(.dividend(operand1), .divisor(operand2), .quotient(res_d), .remainder(res_md)); //Division
+	 sumador #(N) mysumador( .num1(operand1), .num2(operand2),.Cin(0),.Cout(cout) ,.Resul(res_s)); //Addition 1
+	 restador #(N) myrestador(.num1(operand1), .num2(operand2),.Carryout(negcarry), .Result(res_r)); //Substraction
+	 multiplicador #(N) mymultiplicador(.num1(operand1), .num2(operand2), .Result(res_m),.OFLOW(overflow)); //Multiplication2
+	 Divisor #(N) mydivisor(.dividend(operand1), .divisor(operand2), .quotient(res_d), .remainder(res_md)); //Division3
 	 //Module
 	 andoperation #(N) myand(.a(operand1), .b(operand2), .result(res_and)); //AND
 	 oroperator #(N) myor(.a(operand1), .b(operand2), .result(res_or)); //OR
 	 xoroperator #(N) myxor(.a(operand1), .b(operand2), .result(res_xor)); //XOR
 	 shiftleft #(N) myshiftl(.a(operand1), .b(operand2), .result(res_sl)); //Shift left
 	 shiftright #(N) myshiftr(.a(operand1), .b(operand2), .result(res_sr)); //Shift left
-	
+	 assign banderas[0]=cout;
+	 assign banderas[1]=overflow;
+	 assign banderas[2]=negcarry;
+	 assign banderas[3]=0;
 	
 	//This creates the selection based on op_select, after number 10 repeats some operations
     always_comb begin

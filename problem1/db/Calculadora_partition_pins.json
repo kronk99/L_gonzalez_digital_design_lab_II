@@ -20,6 +20,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "resultadito[4]",
+					"strict" : false
+				},
+				{
+					"name" : "resultadito[5]",
+					"strict" : false
+				},
+				{
+					"name" : "resultadito[6]",
+					"strict" : false
+				},
+				{
+					"name" : "resultadito[7]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
@@ -41,6 +57,22 @@
 				},
 				{
 					"name" : "operandou2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "operandou2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "operandou2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "operandou2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "operandou2[7]",
 					"strict" : false
 				}
 			]

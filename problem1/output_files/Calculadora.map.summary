@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Mar  6 08:32:02 2024
+Analysis & Synthesis Status : Successful - Thu Mar  7 23:22:58 2024
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Calculadora
 Top-level Entity Name : Calculator_con_altera
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 8
-Total pins : 22
+Total registers : 16
+Total pins : 42
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

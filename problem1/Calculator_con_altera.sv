@@ -1,10 +1,11 @@
-module Calculator_con_altera #(parameter N = 4)(
+module Calculator_con_altera #(parameter N = 8)(
     input clk,
     input reset,
     input [3:0] op_select,
     input [N-1:0] operandou, 
     input [N-1:0] operandou2,
-    output [2*N-1:0] resultadito
+    output [2*N-1:0] resultadito,
+	 output [3:0] bandera
 );
 
     // Instancia del registro
@@ -13,6 +14,7 @@ module Calculator_con_altera #(parameter N = 4)(
     logic [2*N-1:0] resultados;  // Corregir aquí
     logic [N-1:0] reg_out_data2;
     logic [3:0] reg_input_select;
+	 logic [3:0] flags;
 	 //
 
 
@@ -32,6 +34,7 @@ module Calculator_con_altera #(parameter N = 4)(
         .op_select(reg_input_select),
         .operand1(reg_out_data1),
         .operand2(reg_out_data2),
+		  .banderas(flags),
         .resultado(resultados)
     );
 
@@ -39,6 +42,7 @@ module Calculator_con_altera #(parameter N = 4)(
         .result(resultados),
 		  .clk(clk),
         .rst(reset),
+		  .flags(bandera),
         .regresult(resultadito)
     );
 
